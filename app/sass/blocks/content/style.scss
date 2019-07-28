@@ -1,0 +1,189 @@
+main{
+	background-color: rgb(235, 238, 245);
+	font-family: $main-font;
+
+	margin-top: 35px;
+	.service-list-wrap{
+		display: flex;
+		justify-content: space-between;
+		.service-list-col{
+		  width: 32%;
+		  .service-list-head{
+		    .service-label{
+		      h3{
+		      	position: relative;
+
+		      	color: #5D7E99;
+		      	text-align: center;
+		      	font-size: 24px;
+
+		      	padding: 25px 0px 35px 0px;
+		      	&:after{
+		          content: url(../img/icons/arrow-down.png);
+		          position: absolute;
+		          left: 50%;
+		          top: 0;
+
+		          margin-top: 60px;
+		          margin-left: -12px;
+		          width: 24px;
+
+
+		      	}
+
+		      }
+
+		    }
+
+		  }
+
+	  }
+	  .service-list{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      .service-item{
+        background-color: #FFF;
+        margin-bottom: 20px;
+
+        border-radius: 3px;
+        .item-view{
+        	padding: 18px 18px 5px 18px;
+          .item-view__center{
+          	margin: 30px 0px;
+
+          }
+          .item-view__bottom{
+          	font-size: 14px;
+            .view__bottom-left{
+              .printer-icon{
+                position: relative;
+                vertical-align: top;
+                margin: 8px 0px 0px 0px;
+               
+              }
+              .printer-required{
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                margin: 4px 0px 0px 21px;
+
+              }
+              .printer-not-required{
+              	display: none;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                margin: 1px 0px 0px 21px;
+
+              }
+              span{
+                font-size: 14px;
+                font-weight: 500;
+                color: #666666;
+
+              }
+              .not-required_span, .required_span{
+                font-weight: 600;
+                color: #666666;
+
+              }
+
+            }
+            .view__bottom-right{
+              .collect-today{
+                display: block;
+
+                font-weight: 600;
+                color: #666666;
+
+              }
+              img{
+                vertical-align: top;
+                margin: 8px 7px 0px 30px;
+
+              }
+              .delivery_span{
+                color: #277FBF;
+
+              }
+              .drop-by_span{
+              	font-weight: 600;
+              	color: #666666;
+              }
+
+            }
+            *{
+              display: inline-block;
+              position: relative;
+
+            }
+
+          }
+
+        }
+
+      }
+
+	  }
+
+	}
+	.item-view__head{
+  	position: relative;
+    .company-icon{
+      height: 51px;
+      max-width: 120px;
+      display: flex;
+      vertical-align: top;
+
+      margin-right: 15px;
+
+    }
+    *{
+      display: inline-block;
+
+    }
+    .view__head-right{
+    	text-align: left;
+	    padding-left: 10px;
+	    border-left: 1px solid #d0d0d0;
+	    h3{
+	    	color: #5D7E99;
+	    	display: block;
+	    	font-size: 26px;
+        .ex-vat{
+          font-size: 12px;
+          color: #5D7E99;
+
+        }
+        .ship-cost{
+          font-weight: bold;
+
+        }
+      }
+      h4{
+        color: #999999;
+        font-size: 16px;
+        .inc-vat{
+          font-size: 12px;
+
+        }
+
+      }
+
+    }
+    .more-info{
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+
+    }
+
+  }
+
+}

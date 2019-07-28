@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #FFF; }
+
+h3 {
+  color: #207dbb;
+  font-size: 24px; }
+
+a:hover,
+a:focus,
+a:active {
+  color: #446dc1;
+  text-decoration: none !important; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  position: relative; }
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.margin-center {
+  margin: 0 auto; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.no-margin {
+  margin: 0 !important; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+.button {
+  border: none;
+  color: #FFF;
+  background-color: transparent;
+  padding: 10px 25px;
+  border-radius: 6px;
+  outline: none !important; }
+
+.pull-right {
+  float: right; }
+
+.dark-btn {
+  background-color: #446dc1; }
+
+.ease-out {
+  transition: all 0.3s; }
+
+.visually-hidden {
+  visibility: hidden;
+  display: none; }
+
+.book-now-btn {
+  text-transform: uppercase;
+  background-color: #2EDBA2;
+  border: solid 1.5px #2EDBA2;
+  width: 100%;
+  display: block; }
+  .book-now-btn:hover {
+    background-color: transparent;
+    color: #2EDBA2; }
+
+.active {
+  display: block !important;
+  visibility: visible; }

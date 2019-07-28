@@ -1,0 +1,23 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch app/sass -o app/style"
+  },
+  "author": "Volodymyr Potiichuk",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-server-livereload": "^1.9.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-clean-css": "^4.2.0",
+    "node-sass": "^4.12.0"
+  }
+}

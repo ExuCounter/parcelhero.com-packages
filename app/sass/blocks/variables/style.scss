@@ -1,0 +1,26 @@
+//COLORS
+$green-color: #cddc55;
+$light-color: #ffffff;
+$dark-color: #6e707a;
+$accent-color: #ebb228;
+$font-color: #000000;
+$brown-color: #b87409;
+
+
+//FONTS
+
+//BREAKPOINTS
+$extra-extra-large-devices: 1640px;
+$extra-large-devices: 1200px;
+$large-devices: 992px;
+$medium-devices: 768px;
+$small-devices: 576px;
+
+//SIZE
+$large-height: 65%;
+$medium-height: 50%;
+$small-height: 35%;
+
+//BORDER
+$article-border: 1px solid transparentize($dark-color, 0.8);
+$bg-border: transparentize($dark-color, 0.8);

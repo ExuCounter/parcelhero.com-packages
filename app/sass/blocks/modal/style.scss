@@ -1,0 +1,111 @@
+.modal-wrapper{
+  .modal-cover {
+    display: none;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+
+	  background: #000;
+	  z-index: 100;
+	  opacity: 0.6;
+
+	}
+  .modal{
+    display: none;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+
+	  overflow-x: auto;
+	  overflow-y: hidden;
+
+	  z-index: 200;
+  	.modal-content {
+  		display: 	none;
+		  min-width: 200px;
+		  width: 50%;
+
+	    top: 50%;
+	    left: 50%;
+
+	    transform: translate(-50%, -50%);
+
+		  position: absolute;
+		  background-color: #FFF;
+
+		  z-index: 300;
+		  padding: 34px 34px 27px 34px;
+		  vertical-align: top;
+			  .close-btn{
+          position: absolute;
+          top: 17px;
+          right: 17px;
+
+          cursor: pointer;
+
+			  }
+			  .item-view__head{
+          margin: 15px 0px 25px 0px;
+
+			  }
+			  .service-wrap{
+			  	display: flex;
+			  	margin-bottom: 20px;
+				  .service-benefits-col{
+            span{
+              color: #277FBF;
+              font-weight: 600;
+              font-size: 18px;
+
+              display: 	block;
+              padding-bottom: 15px;
+
+            }
+            p{
+            	position: relative;
+
+              margin: 0px 0px 5px 25px;
+              font-size: 14px;
+              &:after{
+                content: url(../img/icons/circle-ok.png);
+
+                position: absolute;
+                left: -25px;
+                top: 2px;
+
+              }
+
+            }
+
+				  }
+				  .service-conditions-col{
+				  	@extend .service-benefits-col;
+				  	margin-left: 95px;
+				  	p{
+              &:after{
+              	 content: url(../img/icons/inner-dot-icon.png);
+              }
+
+				  	}
+
+
+				  }
+
+		    }
+	    	.book-now-btn{
+			  	display: block;
+
+          width: 50%;
+          margin: 0 auto;
+         
+			  }
+
+	    }
+
+	 }
+
+}

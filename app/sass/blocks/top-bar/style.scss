@@ -1,0 +1,38 @@
+$main-color: #446dc1;
+$background-color: #FFF;
+$main-font: 'Roboto', sans-serif;
+
+.top-bar{
+	background-color: rgba(242, 242, 242, 1);
+	font-family: $main-font;
+
+	padding: 8px;
+  .top-bar__block{
+  	display: flex;
+  	justify-content: center;
+    .top-bar__icon{
+      max-width: 30px;
+	    max-height: 28px;
+	    margin: 10px 05px 0px 0px;
+      vertical-align: top;
+
+    }
+    strong{
+    	display: block;
+
+    }
+    *{
+      display: inline-block;
+
+    }
+    &:nth-child(3){
+		.top-bar__icon{
+	    max-width: 65px;
+
+	    }
+
+	  }
+
+  }
+
+}
