@@ -37,7 +37,7 @@ gulp.task('autoprefixer', () =>
 gulp.task('css-comb', done => {
    gulp.src('app/style/style.css')
     .pipe(csscomb())
-    .pipe(gulp.dest('app/style/'));
+    .pipe(gulp.dest('minify/style/'));
    done();
 });
 
@@ -45,7 +45,7 @@ gulp.task('css-minify', done => {
     gulp.src('app/style/style.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('app/style/'));
+        .pipe(gulp.dest('minify/style/'));
    done();
 
 });
@@ -53,21 +53,21 @@ gulp.task('css-minify', done => {
 gulp.task('html-minify', () => {
   return gulp.src('app/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('app/'));
+    .pipe(gulp.dest('minify/'));
 });
 
 gulp.task('minify-js', done => {
      return pipeline(
         gulp.src('app/js/*.js'),
         uglify(),
-        gulp.dest('app/js/')
+        gulp.dest('minify/js/')
   );
 });
 
 gulp.task('minify-img', () =>
-    gulp.src('app/style/icons/*')
+    gulp.src('app/img/icons/')
         .pipe(imagemin())
-        .pipe(gulp.dest('app/img/icons/'))
+        .pipe(gulp.dest('minify/img/icons/'))
 );
 
 gulp.task('minify', gulp.series( 'css-comb', 'css-minify', 'html-minify', 'minify-js', 'minify-img'))
