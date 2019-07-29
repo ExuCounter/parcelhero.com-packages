@@ -216,13 +216,14 @@
       .options-list ul .upgrade-item .text-description_active {
         display: block; }
 
-.choose-date {
+.choose-date, .drop-postcode {
+  display: none;
   border-top: solid 0.5px #898989;
   padding: 12px 0px 16px 0px; }
-  .choose-date .choose-date__left {
+  .choose-date .choose-date__left, .drop-postcode .choose-date__left, .drop-postcode .drop-postcode__left {
     display: flex;
     position: relative; }
-    .choose-date .choose-date__left .collect-today-btn, .choose-date .choose-date__left .collection-date-btn {
+    .choose-date .choose-date__left .collect-today-btn, .drop-postcode .choose-date__left .collect-today-btn, .drop-postcode .drop-postcode__left .collect-today-btn, .choose-date .choose-date__left .collection-date-btn, .drop-postcode .choose-date__left .collection-date-btn, .drop-postcode .drop-postcode__left .collection-date-btn {
       display: flex;
       align-items: center;
       padding: 8px 14px 8px 14px;
@@ -231,16 +232,16 @@
       cursor: pointer;
       font-size: 14px;
       color: #999999; }
-      .choose-date .choose-date__left .collect-today-btn input, .choose-date .choose-date__left .collection-date-btn input {
+      .choose-date .choose-date__left .collect-today-btn input, .drop-postcode .choose-date__left .collect-today-btn input, .drop-postcode .drop-postcode__left .collect-today-btn input, .choose-date .choose-date__left .collection-date-btn input, .drop-postcode .choose-date__left .collection-date-btn input, .drop-postcode .drop-postcode__left .collection-date-btn input {
         margin-right: 10px; }
-    .choose-date .choose-date__left .collect-today-btn_active {
+    .choose-date .choose-date__left .collect-today-btn_active, .drop-postcode .choose-date__left .collect-today-btn_active, .drop-postcode .drop-postcode__left .collect-today-btn_active {
       border: solid 1.5px #446dc1; }
-    .choose-date .choose-date__left .collection-date-btn {
+    .choose-date .choose-date__left .collection-date-btn, .drop-postcode .choose-date__left .collection-date-btn, .drop-postcode .drop-postcode__left .collection-date-btn {
       margin-left: 15px; }
-      .choose-date .choose-date__left .collection-date-btn img {
+      .choose-date .choose-date__left .collection-date-btn img, .drop-postcode .choose-date__left .collection-date-btn img, .drop-postcode .drop-postcode__left .collection-date-btn img {
         width: 24px;
         margin-right: 10px; }
-    .choose-date .choose-date__left .choose-collection {
+    .choose-date .choose-date__left .choose-collection, .drop-postcode .choose-date__left .choose-collection, .drop-postcode .drop-postcode__left .choose-collection {
       display: none;
       position: absolute;
       left: 0;
@@ -251,33 +252,89 @@
       z-index: 1;
       box-shadow: 1px 1px 5px 3px #d9d6d685;
       border-radius: 4px; }
-      .choose-date .choose-date__left .choose-collection .collection-date__block {
+      .choose-date .choose-date__left .choose-collection .collection-date__block, .drop-postcode .choose-date__left .choose-collection .collection-date__block, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block {
         border-radius: 3px;
         border: solid 1px #c3c5c7;
         margin-right: 15px;
-        padding: 8px 15px 0px 15px; }
-        .choose-date .choose-date__left .choose-collection .collection-date__block .date-week {
+        padding: 8px 20px 0px 20px;
+        cursor: pointer; }
+        .choose-date .choose-date__left .choose-collection .collection-date__block .date-week, .drop-postcode .choose-date__left .choose-collection .collection-date__block .date-week, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block .date-week {
           display: block;
           text-align: center;
           font-size: 12px;
           color: #999999; }
-        .choose-date .choose-date__left .choose-collection .collection-date__block .date-day {
+        .choose-date .choose-date__left .choose-collection .collection-date__block .date-day, .drop-postcode .choose-date__left .choose-collection .collection-date__block .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block .date-day {
           display: block;
           text-align: center;
           color: #5D6162;
           font-size: 40px; }
-        .choose-date .choose-date__left .choose-collection .collection-date__block .date-time {
+        .choose-date .choose-date__left .choose-collection .collection-date__block .date-time, .drop-postcode .choose-date__left .choose-collection .collection-date__block .date-time, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block .date-time {
           text-align: center;
           font-size: 16px;
           color: #5D6162;
           padding-bottom: 5px; }
-      .choose-date .choose-date__left .choose-collection .collection-time__block {
+        .choose-date .choose-date__left .choose-collection .collection-date__block:nth-child(4), .drop-postcode .choose-date__left .choose-collection .collection-date__block:nth-child(4), .drop-postcode .drop-postcode__left .choose-collection .collection-date__block:nth-child(4) {
+          color: #CCCCCC;
+          border: solid 1px #c3c5c7; }
+          .choose-date .choose-date__left .choose-collection .collection-date__block:nth-child(4) .date-day, .drop-postcode .choose-date__left .choose-collection .collection-date__block:nth-child(4) .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block:nth-child(4) .date-day {
+            color: #CCCCCC; }
+        .choose-date .choose-date__left .choose-collection .collection-date__block:nth-child(5), .drop-postcode .choose-date__left .choose-collection .collection-date__block:nth-child(5), .drop-postcode .drop-postcode__left .choose-collection .collection-date__block:nth-child(5) {
+          color: #CCCCCC;
+          border: solid 1px #c3c5c7; }
+          .choose-date .choose-date__left .choose-collection .collection-date__block:nth-child(5) .date-day, .drop-postcode .choose-date__left .choose-collection .collection-date__block:nth-child(5) .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block:nth-child(5) .date-day {
+            color: #CCCCCC; }
+      .choose-date .choose-date__left .choose-collection .collection-date__block_active, .drop-postcode .choose-date__left .choose-collection .collection-date__block_active, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block_active {
+        border: solid 1px #446dc1; }
+      .choose-date .choose-date__left .choose-collection .collection-time__block, .drop-postcode .choose-date__left .choose-collection .collection-time__block, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block {
         padding-bottom: 7px;
-        margin-top: 10px; }
-      .choose-date .choose-date__left .choose-collection .collection-wrap {
+        margin-top: 10px;
+        cursor: pointer; }
+      .choose-date .choose-date__left .choose-collection .collection-wrap, .drop-postcode .choose-date__left .choose-collection .collection-wrap, .drop-postcode .drop-postcode__left .choose-collection .collection-wrap {
         display: flex;
         margin-bottom: 20px; }
-      .choose-date .choose-date__left .choose-collection h5 {
+      .choose-date .choose-date__left .choose-collection h5, .drop-postcode .choose-date__left .choose-collection h5, .drop-postcode .drop-postcode__left .choose-collection h5 {
         font-size: 12px;
         color: #666666;
         font-weight: 600; }
+
+.drop-postcode {
+  padding: 12px 0px 14px 0px; }
+  .drop-postcode .drop-postcode__left .view-drop-btn {
+    background-color: transparent;
+    border: solid 1px #c3c5c7;
+    border-radius: 3px;
+    color: #999999;
+    font-size: 16px;
+    padding: 5px 14px; }
+    .drop-postcode .drop-postcode__left .view-drop-btn img {
+      margin: 0px 7px 0px 0px; }
+    .drop-postcode .drop-postcode__left .view-drop-btn:hover {
+      color: #446dc1;
+      border: solid 1px #446dc1; }
+  .drop-postcode .drop-postcode__left span {
+    font-size: 14px;
+    color: #999999;
+    line-height: 46px;
+    margin-right: 15px; }
+  .drop-postcode .drop-postcode__left form {
+    margin-right: 15px;
+    overflow: hidden;
+    position: relative; }
+    .drop-postcode .drop-postcode__left form input[type='text'] {
+      border: solid 1px #666666;
+      padding: 10px;
+      width: 250px; }
+    .drop-postcode .drop-postcode__left form input[type='submit'] {
+      color: #FFF;
+      border: solid 1px #446dc1;
+      background-color: #446dc1;
+      text-transform: uppercase;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-weight: 300;
+      font-size: 13px;
+      border-radius: 3px;
+      padding: 13px 15px; }
+      .drop-postcode .drop-postcode__left form input[type='submit']:hover {
+        background-color: #3059ad; }

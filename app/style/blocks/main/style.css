@@ -71,10 +71,6 @@ a:active {
     background-color: transparent;
     color: #2EDBA2; }
 
-.active {
-  display: block !important;
-  visibility: visible; }
-
 .close-btn, .close-choose-btn {
   position: absolute;
   top: 17px;

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style/style.min.css">
+	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
@@ -221,26 +221,27 @@
 	   	 <div class="filters__second-row">
 	   	 	<div class="row justify-content-between">
 		   	 	<div class="col-9 filter-buttons">
-		   	 		<button class="filter-btn button ease-out text-left">
+		   	 		<button class="filter-btn button ease-out text-left" id='all'>
 		   	 			<span class='filter-btn__title'>All</span>
 		   	 			<span>from £2.55</span>
 		   	 		</button>
 
-		   	 		<button class="filter-btn button ease-out text-left">
+		   	 		<button class="filter-btn button ease-out text-left" id='collection'>
 		   	 			<span class='filter-btn__title'>Collection</span>
 		   	 			<span>from £2.55</span>
 		   	 		</button>
 
-		   	 		<button class="filter-btn button ease-out text-left">
+		   	 		<button class="filter-btn button ease-out text-left" id='drop-off'>
 		   	 			<span class='filter-btn__title'>Drop off</span>
 		   	 			<span>from £3.06</span>
 		   	 		</button>
 
-		   	 		<button class="filter-btn button ease-out text-left">
-		   	 			<span class='filter-btn__title'>Fastest</span>		   	 			<span>from £6.85</span>
+		   	 		<button class="filter-btn button ease-out text-left" id='fastest'>
+		   	 			<span class='filter-btn__title'>Fastest</span>		   	 			
+		   	 			<span>from £6.85</span>
 		   	 		</button>
 
-		   	 		<button class="filter-btn button ease-out text-left">
+		   	 		<button class="filter-btn button ease-out text-left" id='no-printer'>
 		   	 			<span class='filter-btn__title'>No printer?</span>
 		   	 			<span>from £3.56</span>
 		   	 		</button>
@@ -369,7 +370,7 @@
 	 						</span>
 	 					</div>
 
-	 					<div class="collection-date__block">
+	 					<div class="collection-date__block disabled">
 	 						<span class='saturday date-week'>
 	 							Saturday
 	 						</span>
@@ -378,7 +379,7 @@
 	 						</span>
 	 					</div>
 
-	 					<div class="collection-date__block">
+	 					<div class="collection-date__block disabled">
 	 						<span class='sunday date-week'>
 	 							Sunday
 	 						</span>
@@ -423,6 +424,20 @@
 
          			<img src="img/icons/close-btn.png" alt="close button" class="close-choose-btn">
          		</div>
+         	</div>
+         </div>
+
+         <div class="drop-postcode">
+         	<div class="drop-postcode__left">
+         		<span>Drop off postcode</span>
+         		<form action="#">
+         			<input type="text" placeholder="TW8 8HP">
+         			<input type="submit" value='Search' class='ease-out'>
+         		</form>
+         		<button class="view-drop-btn ease-out">
+         			<img src="img/icons/view-drop-img.png" alt="view drop button">
+         			View drop points on map
+         		</button>
          	</div>
          </div>
 
@@ -974,11 +989,6 @@
 
    	 	</div>
    	 </div>
-
-   	 <div class="view-drop-btn">
-   	 	Map
-   	 </div>
-
 
    </main>
 

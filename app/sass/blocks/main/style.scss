@@ -107,12 +107,6 @@ a:active{
 
 }
 
-.active{
-	display: block !important;
-	visibility: visible;
-
-}
-
 .close-btn{
 	position: absolute;
 	top: 17px;
@@ -126,3 +120,4 @@ a:active{
   @extend .close-btn;
 
 }
+

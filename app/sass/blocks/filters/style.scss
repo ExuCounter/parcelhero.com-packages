@@ -345,6 +345,8 @@ $main-font: 'Roboto', sans-serif;
 
 }
 .choose-date{
+	display: none;
+
 	border-top: solid 0.5px #898989;
 	padding: 12px 0px 16px 0px;
 	.choose-date__left{
@@ -402,7 +404,9 @@ $main-font: 'Roboto', sans-serif;
        	 border: solid 1px #c3c5c7;
 
        	 margin-right: 15px;
-       	 padding: 8px 15px 0px 15px;
+       	 padding: 8px 20px 0px 20px;
+
+       	 cursor: pointer;
 
          .date-week{
            display: block;
@@ -428,11 +432,35 @@ $main-font: 'Roboto', sans-serif;
            padding-bottom: 5px;
 
          }
+         &:nth-child(4){
+           color: #CCCCCC;
+           border: solid 1px #c3c5c7;
+           .date-day{
+             color: #CCCCCC;
+
+           }
+
+         }
+         &:nth-child(5){
+           color: #CCCCCC;
+           border: solid 1px #c3c5c7;
+           .date-day{
+             color: #CCCCCC;
+
+           }
+
+         }
+
+       }
+       .collection-date__block_active{
+         border: solid 1px $main-color;
 
        }
        .collection-time__block{
          padding-bottom: 7px;
          margin-top: 10px;
+
+         cursor: pointer;
 
        }
        .collection-wrap{
@@ -452,3 +480,74 @@ $main-font: 'Roboto', sans-serif;
 	 }
 
  }
+
+ .drop-postcode{
+ 	@extend .choose-date;
+ 	padding: 12px 0px 14px 0px;
+  .drop-postcode__left{
+    @extend .choose-date__left;
+    .view-drop-btn{
+      background-color: transparent;
+      border: solid 1px #c3c5c7;
+      border-radius: 3px;
+
+      color: #999999;
+      font-size: 16px;
+
+      padding: 5px 14px;
+      img{
+        margin: 0px 7px 0px 0px; 
+
+      }
+      &:hover{
+        color: $main-color;
+        border: solid 1px $main-color;
+
+      }
+
+    }
+    span{
+      font-size: 14px;
+      color: #999999;
+
+      line-height: 46px;
+      margin-right: 15px;
+
+    }
+    form{
+    	margin-right: 15px;
+    	overflow: hidden;
+      position: relative;
+      input[type='text']{
+        border: solid 1px #666666;
+        padding: 10px;
+        width: 250px;
+
+      }
+      input[type='submit']{
+      	color: #FFF;
+        border: solid 1px $main-color;
+        background-color: $main-color;
+        text-transform: uppercase;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        font-weight: 300;
+        font-size: 13px;
+
+        border-radius: 3px;
+        padding: 13px 15px;
+        &:hover{
+          background-color: $main-color - 20;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
