@@ -326,6 +326,106 @@
  
 	   	 	</div>
 	   	 </div>
+
+         <div class="choose-date">
+         	<div class="choose-date__left">
+         		<div class='collect-today-btn'>
+         			<input type="checkbox">
+         			Collect today
+         		</div>
+         		<div class="collection-date-btn">
+         			<img src="img/icons/calendar.svg" alt="calendar icon">
+         			Choose collection date
+         		</div>
+         		<div class="choose-collection">
+         			<h5>Choose a collection date</h5>
+         			<br>
+                    
+                    <div class="collection-wrap">
+	                    <div class="collection-date__block">
+	 						<span class='tomorrow date-week'>
+	 							Tomorrow
+	 						</span>
+	 						<span class='day-20 date-day'>
+	 							20
+	 						</span>
+	 					</div>
+
+	 					<div class="collection-date__block">
+	 						<span class='thursday date-week'>
+	 							Thursday
+	 						</span>
+	 						<span class='day-21 date-day'>
+	 							21
+	 						</span>
+	 					</div>
+
+	 					<div class="collection-date__block">
+	 						<span class='friday date-week'>
+	 							Friday
+	 						</span>
+	 						<span class='day-22 date-day'>
+	 							22
+	 						</span>
+	 					</div>
+
+	 					<div class="collection-date__block">
+	 						<span class='saturday date-week'>
+	 							Saturday
+	 						</span>
+	 						<span class='day-23 date-day'>
+	 							23
+	 						</span>
+	 					</div>
+
+	 					<div class="collection-date__block">
+	 						<span class='sunday date-week'>
+	 							Sunday
+	 						</span>
+	 						<span class='day-24 date-day'>
+	 							24
+	 						</span>
+	 					</div>
+
+	 					<div class="collection-date__block">
+	 						<span class='monday date-week'>
+	 							Monday
+	 						</span>
+	 						<span class='day-25 date-day'>
+	 							25
+	 						</span>
+	 					</div>
+
+	 					<div class="collection-date__block">
+	 						<span class='sunday date-week'>
+	 							Tuesday
+	 						</span>
+	 						<span class='day-26 date-day'>
+	 							26
+	 						</span>
+	 					</div>
+ 					</div>
+
+ 					<h5>Choose a collection time</h5>
+
+ 					<div class="collection-wrap">
+ 						<div class="collection-date__block collection-time__block">
+ 							<span class='date-time'>
+ 								9am - 12pm
+ 							</span>
+ 						</div>
+ 						<div class="collection-date__block collection-time__block">
+ 						 	 <span class='date-time'>
+ 								12pm - 6pm
+ 							</span>
+ 					    </div>
+ 					</div>
+
+         			<img src="img/icons/close-btn.png" alt="close button" class="close-choose-btn">
+         		</div>
+         	</div>
+         </div>
+
 	   </div> 
    </section>
 
@@ -346,7 +446,7 @@
    	 				</div>
    	 			</div>
    	 			<div class="service-list">
-   	 				<div class="service-item">
+   	 				<div class="service-item" id='item_1'>
    	 					<div class="item-view">
    	 						<div class="item-view__head">
    	 							<div class="view__head-left">
@@ -393,7 +493,7 @@
    	 					</div>
    	 				</div>
 
-   	 				<div class="service-item">
+   	 				<div class="service-item" id='item_2'>
    	 					<div class="item-view">
    	 						<div class="item-view__head">
    	 							<div class="view__head-left">
@@ -440,7 +540,7 @@
    	 					</div>
    	 				</div>
 
-   	 				<div class="service-item">
+   	 				<div class="service-item" id='item_3'>
    	 					<div class="item-view">
    	 						<div class="item-view__head">
    	 							<div class="view__head-left">
@@ -491,7 +591,7 @@
 
    	 		<!-- Second column -->
 
-   	 		<div class="service-list-col">
+   	 		<div class="service-list-col" id='item_4'>
    	 			<div class="service-list-head">
    	 				<div class="service-label">
    	 					<h3>2 days</h3>
@@ -545,7 +645,7 @@
    	 					</div>
    	 				</div>
 
-   	 				<div class="service-item">
+   	 				<div class="service-item" id='item_5'>
    	 					<div class="item-view">
    	 						<div class="item-view__head">
    	 							<div class="view__head-left">
@@ -592,7 +692,7 @@
    	 					</div>
    	 				</div>
 
-   	 				<div class="service-item">
+   	 				<div class="service-item" id='item_6'>
    	 					<div class="item-view">
    	 						<div class="item-view__head">
    	 							<div class="view__head-left">
@@ -643,7 +743,7 @@
 
    	 		<!-- Third column -->
 
-   	 		<div class="service-list-col">
+   	 		<div class="service-list-col" id='item_7'>
    	 			<div class="service-list-head">
    	 				<div class="service-label">
    	 					<h3>3-4 Days</h3>
@@ -697,7 +797,7 @@
    	 					</div>
    	 				</div>
 
-   	 				<div class="service-item">
+   	 				<div class="service-item" id='item_8'>
    	 					<div class="item-view">
    	 						<div class="item-view__head">
    	 							<div class="view__head-left">
@@ -744,7 +844,7 @@
    	 					</div>
    	 				</div>
 
-   	 				<div class="service-item">
+   	 				<div class="service-item" id='item_9'>
    	 					<div class="item-view">
    	 						<div class="item-view__head">
    	 							<div class="view__head-left">
@@ -841,18 +941,56 @@
 	   	 		</div>
    	 		</div>
 
+   	 		<div class="modal-wrapper modal-map-wrapper">
+   	 			<div class="modal-cover"></div>
+	   	 		<div class="modal_map modal">
+	   	 			<div class="modal-content modal-map-content">
+	   	 				<h5>Select a carrier:</h5>
+	   	 				<div class="map-carriers">
+	   	 					<div class="map-carriers__block">
+	   	 						<img src="img/icons/ups.svg" alt="carrier ups">
+	   	 					</div>
+	   	 					<div class="map-carriers__block">
+	   	 						<img src="img/icons/parcelforce.jpg" alt="carrier parcelforce">
+	   	 					</div>
+	   	 					<div class="map-carriers__block">
+	   	 						<img src="img/icons/hermes.svg" alt="carrier hermes">
+	   	 					</div>
+	   	 					<div class="map-carriers__block">
+	   	 						<img src="img/icons/tnt.png" alt="carrier tnt">
+	   	 					</div>
+	   	 					<div class="map-carriers__block">
+	   	 						<img src="img/icons/pickup.png" alt="carrier pickup">
+	   	 					</div>
+	   	 				</div>
+	   	 				<h5>6 locations found within 25 miles</h5>
+
+	   	 				<div id="map"></div>
+	 				    
+ 						<img src="img/icons/close-btn.png" alt="close button" class="close-btn">
+	   	 			</div>
+	   	 		</div>
+   	 		</div>
+
    	 	</div>
+   	 </div>
+
+   	 <div class="view-drop-btn">
+   	 	Map
    	 </div>
 
 
    </main>
 
-
     <script src='js/jquery.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='js/map.js'></script>
+	 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ5SN5W57yc3C5u7JA4Kwi2EHsRwFHvfU&callback=initMap"
+     type="text/javascript"></script>
 	<script src='js/script.js'></script>
 	<script src='js/modal.js'></script>
 	<script src='js/descriptions.js'></script>
+	<script src='js/filter.js'></script>
 </body>
 </html>

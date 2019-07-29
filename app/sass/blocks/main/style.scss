@@ -112,3 +112,17 @@ a:active{
 	visibility: visible;
 
 }
+
+.close-btn{
+	position: absolute;
+	top: 17px;
+	right: 17px;
+
+	cursor: pointer;
+
+}
+
+.close-choose-btn{
+  @extend .close-btn;
+
+}

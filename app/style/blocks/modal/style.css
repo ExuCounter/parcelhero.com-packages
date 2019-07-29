@@ -1,0 +1,93 @@
+.modal-wrapper .modal-cover {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 100;
+  opacity: 0.6; }
+
+.modal-wrapper .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 200; }
+  .modal-wrapper .modal .modal-content {
+    display: none;
+    min-width: 200px;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: #FFF;
+    z-index: 300;
+    padding: 34px 34px 27px 34px;
+    vertical-align: top; }
+    .modal-wrapper .modal .modal-content .close-btn {
+      position: absolute;
+      top: 17px;
+      right: 17px;
+      cursor: pointer; }
+    .modal-wrapper .modal .modal-content .item-view__head {
+      margin: 15px 0px 25px 0px; }
+    .modal-wrapper .modal .modal-content .service-wrap {
+      display: flex;
+      margin-bottom: 20px; }
+      .modal-wrapper .modal .modal-content .service-wrap .service-benefits-col span, .modal-wrapper .modal .modal-content .service-wrap .service-conditions-col span {
+        color: #277FBF;
+        font-weight: 600;
+        font-size: 18px;
+        display: block;
+        padding-bottom: 15px; }
+      .modal-wrapper .modal .modal-content .service-wrap .service-benefits-col p, .modal-wrapper .modal .modal-content .service-wrap .service-conditions-col p {
+        position: relative;
+        margin: 0px 0px 5px 25px;
+        font-size: 14px; }
+        .modal-wrapper .modal .modal-content .service-wrap .service-benefits-col p:after, .modal-wrapper .modal .modal-content .service-wrap .service-conditions-col p:after {
+          content: url(../img/icons/circle-ok.png);
+          position: absolute;
+          left: -25px;
+          top: 2px; }
+      .modal-wrapper .modal .modal-content .service-wrap .service-conditions-col {
+        margin-left: 95px; }
+        .modal-wrapper .modal .modal-content .service-wrap .service-conditions-col p:after {
+          content: url(../img/icons/inner-dot-icon.png); }
+    .modal-wrapper .modal .modal-content .book-now-btn {
+      display: block;
+      width: 50%;
+      margin: 0 auto; }
+
+.modal-wrapper #map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+  margin-top: 30px; }
+
+.modal-wrapper .modal_map .modal-map-content {
+  width: 70% !important; }
+  .modal-wrapper .modal_map .modal-map-content h5 {
+    font-size: 18px;
+    color: #666666; }
+  .modal-wrapper .modal_map .modal-map-content .map-carriers {
+    display: flex;
+    margin: 20px 0px 30px 0px; }
+    .modal-wrapper .modal_map .modal-map-content .map-carriers .map-carriers__block {
+      position: relative;
+      cursor: pointer;
+      padding: 10px;
+      margin-right: 20px;
+      border: solid 1px #c5c3c3;
+      border-radius: 4px; }
+      .modal-wrapper .modal_map .modal-map-content .map-carriers .map-carriers__block img {
+        width: 107px;
+        height: 47px; }
+    .modal-wrapper .modal_map .modal-map-content .map-carriers .map-carriers__block_active {
+      display: block; }
