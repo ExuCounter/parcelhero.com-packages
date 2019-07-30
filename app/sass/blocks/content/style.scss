@@ -62,22 +62,12 @@ main{
                
               }
               .printer-required{
-
-                position: absolute;
-                top: 0;
-                left: 0;
-
-                margin: 4px 0px 0px 21px;
+                @extend .printer-icon;
 
               }
               .printer-not-required{
-              	display: none;
-
-                position: absolute;
-                top: 0;
-                left: 0;
-
-                margin: 1px 0px 0px 21px;
+              	@extend .printer-icon;
+                display: none;
 
               }
               span{
@@ -103,7 +93,7 @@ main{
               }
               img{
                 vertical-align: top;
-                margin: 8px 7px 0px 30px;
+                margin: 7px 2px 0px 2px;
 
               }
               .delivery_span{
@@ -113,6 +103,8 @@ main{
               .drop-by_span{
               	font-weight: 600;
               	color: #666666;
+                font-size: 13px;
+
               }
 
             }
@@ -177,9 +169,11 @@ main{
     }
     .more-info{
       position: absolute;
-      top: 0;
-      right: 0;
+      top: -7px;
+      right: -7px;
       cursor: pointer;
+
+      width: 20px;
 
     }
 

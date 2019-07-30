@@ -2,19 +2,15 @@ var options_list = $('.options-list'),
     details_list = $('.details-list'),
     collection = $('.choose-collection');
 
-$(".filter--found-sizes").on("click", function(e) {
-     $('.details-list').toggleClass("details-list_active");
-});
-
-$(".shipment-btn").on("click", function(e) {
-     $('.options-list').toggleClass("options-list_active");
+$(".filter-mobile-btn").on("click", function(e) {
+     $('.options-list').css({'display':'none'});
 });
 
 $(".shipment-btn").on("click", function(e) {
 	if($(options_list).css('display') == 'none'){
-       $(options_list).fadeIn();
+       $(options_list).slideToggle();
      } else{
-     	$(options_list).fadeOut();
+     	$(options_list).slideToggle();
      }
 });
 
@@ -32,14 +28,14 @@ $(".map-carriers__block").on("click", function(e) {
 
 $(".collection-date-btn").on("click", function(e) {
     if($(collection).css('display') == 'none'){
-       $(collection).fadeIn();
+       $(collection).slideToggle();
      } else{
-        $(collection).fadeOut();
+        $(collection).slideToggle();
      }
 });
 
 $(".close-choose-btn").on("click", function(e) {
-    $('.choose-collection').fadeOut();
+    $('.choose-collection').slideToggle();
 });
 
 

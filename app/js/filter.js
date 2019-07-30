@@ -1,5 +1,3 @@
-
-
 $('.choose-date').find('.collect-today-btn').click(function(){
 	if( $(this).find('input').is(':checked') ) {
 		$(this).find('input').removeAttr('checked');
@@ -11,9 +9,9 @@ $('.choose-date').find('.collect-today-btn').click(function(){
 
 $(".filter--found-sizes").on("click", function(e) {
 	if($(details_list).css('display') == 'none'){
-       $(details_list).fadeIn();
+       $(details_list).slideToggle();
      } else{
-     	$(details_list).fadeOut();
+     	$(details_list).slideToggle();
      }
 });
 
@@ -24,6 +22,16 @@ $(".filter-btn").on("click", function(e) {
     }
 	
 	$(this).toggleClass("filter-btn_active");
+
+});
+
+$(".filter-mobile-btn").on("click", function(e) {
+
+    if($('.filter-buttons').css('display') == 'none'){
+       $('.filter-buttons').slideToggle();
+     } else{
+     	$('.filter-buttons').slideToggle();
+     }
 
 });
 

@@ -4,34 +4,17 @@ var first_desc = $('.first-description'),
     fourth_desc = $('.fourth-description');
 
 $(".first-upgrade").on("click", function(e) {
-	if($(first_desc).css('display') == 'none'){
-       $(first_desc).fadeIn();
-     } else{
-     	$(first_desc).fadeOut();
-     }
+       $(first_desc).slideToggle();
 });
 
 $(".second-upgrade").on("click", function(e) {
-	if($(second_desc).css('display') == 'none'){
-       $(second_desc).fadeIn();
-     } else{
-     	$(second_desc).fadeOut();
-     }
+	     $(second_desc).slideToggle();
 });
 
 $(".third-upgrade").on("click", function(e) {
-	if($(third_desc).css('display') == 'none'){
-       $(third_desc).fadeIn();
-     } else{
-     	$(third_desc).fadeOut();
-     }
+	     $(third_desc).slideToggle();
 });
 
-
 $(".fourth-upgrade").on("click", function(e) {
-	if($(fourth_desc).css('display') == 'none'){
-       $(fourth_desc).fadeIn();
-     } else{
-     	$(fourth_desc).fadeOut();
-     }
+	     $(fourth_desc).slideToggle();
 });

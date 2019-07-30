@@ -25,7 +25,7 @@
         <h2 class='visually-hidden'>Advantages</h2>
 
    	 	<div class="row justify-content-center">
-	   	 	<div class="top-bar__block col-xl-3">
+	   	 	<div class="top-bar__block col-md-3 col-4">
 	   	 		<img src="img/icons/intro-icon1.svg" alt="benefits icon" class='top-bar__icon'>
 	   	 		<span>
 		   	 		<strong class="top-bar__block--name">
@@ -37,7 +37,7 @@
 	   	 		</span>
 	   	 	</div>
 
-	   	 	<div class="top-bar__block col-xl-3">
+	   	 	<div class="top-bar__block col-md-3 col-4">
 	   	 		<img src="img/icons/intro-icon2.svg" alt="benefits icon" class='top-bar__icon'>
 	   	 		<span>
 		   	 		<strong class="top-bar__block--name">
@@ -49,7 +49,7 @@
 	   	 		</span>
 	   	 	</div>
 
-	   	 	<div class="top-bar__block col-xl-3">
+	   	 	<div class="top-bar__block col-md-3 col-4">
 	   	 		<img src="img/icons/intro-icon3.svg" alt="benefits icon" class='top-bar__icon'>
 	   	 	</div>
 	   	 </div>
@@ -65,8 +65,8 @@
 
    	 	<!-- Filters first row -->
 	   	 <div class="filters__first-row">
-	   	 	<div class="row justify-content-around">
-		   	 	<div class="filters--found-services col-8">
+	   	 	<div class="row">
+		   	 	<div class="filters--found-services col-12 col-md-8">
 		   	 		<p><span class='found-services__amount'>14</span> services found, 
 		   	 			<b>from £
 		   	 				<span class='found-services__price'>2.55</span>
@@ -77,7 +77,18 @@
 		   	 		</div>
 		   	 	</div>
 
-		   	 	<div class="filter--found-sizes col-4 cursor-pointer">
+		   	 	<div class="filter--found-sizes col-12 col-lg-4 cursor-pointer">
+		   	 		  <div class="found-sizes__wrap">
+		                 <div class='found-sizes__dimens'>1 Parcel, 1kg, 1 x 1 x 1cm</div>
+
+		                 <div class="found-sizes__edit">
+		                  <a href="#">Edit</a>
+		                </div>
+	   	 	        </div>
+		   	 	</div>
+
+
+		   	 	<!-- <div class="filter--found-sizes col-12 col-md-4 cursor-pointer">
 		   	 	    <div class="row justify-content-end">
 			   	 	    <div class="col-10">
 		                  <div class='found-sizes__dimens'>1 Parcel, 1kg, 1 x 1 x 1cm</div>
@@ -87,7 +98,7 @@
 		                  <a href="#">Edit</a>
 		                </div>
 	   	 	        </div>
-		   	 	</div>
+		   	 	</div> -->
 	   	 	</div>
 	   	 </div>	
 
@@ -220,7 +231,7 @@
 
 	   	 <div class="filters__second-row">
 	   	 	<div class="row justify-content-between">
-		   	 	<div class="col-9 filter-buttons">
+		   	 	<div class="col-md-9 col-12 filter-buttons order-md-1 order-1">
 		   	 		<button class="filter-btn button ease-out text-left" id='all'>
 		   	 			<span class='filter-btn__title'>All</span>
 		   	 			<span>from £2.55</span>
@@ -247,9 +258,12 @@
 		   	 		</button>
 		   	 	</div>
 
-		   	 	<div class="col-3 align-self-end ">
+		   	 	<div class="col-md-3 col-12 align-self-end order-md-12">
 		   	 		<div class="row justify-content-end">
 		   	 	       <button class='shipment-btn button dark-btn ease-out'>Add shipment upgrades</button>
+		   	 	       	<button class="filter-mobile-btn button dark-btn ease-out">
+		   	 		      Filter services
+		   	 	       </button>
 		   	 	    </div>
 		   	 	</div>
 	   	 	</div>
@@ -257,7 +271,7 @@
 
 	   	 <div class="options-list" id='option-list'>
 	   	 	<div class="row">
-	   	 		<div class="col-6">
+	   	 		<div class="col-md-6 col-12">
 	   	 			<ul>
 	   	 				<li class="upgrade-item">
 	   	 					<img src="img/icons/upgrade-icon1.png" alt="upgrade icon" class='upgrade-item__icon'>
@@ -272,7 +286,7 @@
 	   	 				    </div>
 	   	 				</li>
 	   	 				<li class="upgrade-item">
-	   	 					<img src="img/icons/upgrade-icon1.png" alt="upgrade icon" class='upgrade-item__icon'>
+	   	 					<img src="img/icons/upgrade-icon3.png" alt="upgrade icon" class='upgrade-item__icon'>
 	   	 					<a href="javascript:void(0)" class='second-upgrade'>
 	   	 					  Don't deliver without a signature
 	   	 					  <img src="img/icons/upgrade-info-icon.png" alt="upgrade item image">
@@ -287,10 +301,10 @@
 	   	 			</ul>
 	   	 		</div>
 
-	   	 		<div class="col-6">
+	   	 		<div class="col-md-6 col-12">
 	   	 			<ul>
 	   	 				<li class="upgrade-item third-item">
-	   	 					<img src="img/icons/upgrade-icon1.png" alt="upgrade icon" class='upgrade-item__icon'>
+	   	 					<img src="img/icons/upgrade-icon4.png" alt="upgrade icon" class='upgrade-item__icon'>
 	   	 					<a href="javascript:void(0)" class='third-upgrade'>
 	   	 					  Deliver to a home address
 	   	 					  <img src="img/icons/upgrade-info-icon.png" alt="upgrade item image">
@@ -303,7 +317,7 @@
 	   	 				    </div>
 	   	 				</li>
 	   	 				<li class="upgrade-item fourth-item">
-	   	 					<img src="img/icons/upgrade-icon1.png" alt="upgrade icon" class='upgrade-item__icon'> 
+	   	 					<img src="img/icons/upgrade-icon5.png" alt="upgrade icon" class='upgrade-item__icon'> 
 	   	 					<a href="javascript:void(0)" class='fourth-upgrade'>
 	   	 					   Guaranteed delivery
 	   	 					  <img src="img/icons/upgrade-info-icon.png" alt="upgrade item image">
@@ -481,7 +495,7 @@
    	 									<span class='inc-vat'>inc VAT</span>
    	 								</h4>
    	 							</div>
-   	 							<img src="img/icons/upgrade-info-icon.png" alt="more info" class='more-info more-ups'>
+   	 							<img src="img/icons/icon_info_grey.svg" alt="more info" class='more-info more-ups'>
    	 						</div>
    	 						<div class="item-view__center">
    	 							<button class="book-now-btn button ease-out">
@@ -490,15 +504,14 @@
    	 						</div>
    	 						<div class="item-view__bottom">
    	 							<div class="view__bottom-left">
-   	 								<img src="img/icons/printer-required.png" alt="printer required" class='printer-required'>
-   	 								<img src="img/icons/printer-empty.png" alt="printer required" class='printer-not-required'>
-   	 								<img src="img/icons/printer.png" alt="printer" class='printer-icon'>
+   	 								<img src="img/icons/Icon_printer_required.svg" alt="printer required" class='printer-required'>
+   	 								<img src="img/icons/Icon_printer_not_required.svg" alt="printer required" class='printer-not-required'>
    	 								<span class='required_span'>
    	 									Printer<br> required
    	 								</span>
    	 							</div>
    	 							<div class="view__bottom-right">
-   	 								<img src="img/icons/clock.png" alt="clock">
+   	 								<img src="img/icons/icon_clock.svg" alt="clock">
    	 								<p>
    	 									<span class='collect-today'>Collect today</span>
    	 									<span class='delivery_span'>Delivery Tue <span class='delivery'>19</span>th</span>
@@ -528,7 +541,7 @@
    	 									<span class='inc-vat'>inc VAT</span>
    	 								</h4>
    	 							</div>
-   	 							<img src="img/icons/upgrade-info-icon.png" alt="more info" class='more-info more-ups'>
+   	 							<img src="img/icons/icon_info_grey.svg" alt="more info" class='more-info more-ups'>
    	 						</div>
    	 						<div class="item-view__center">
    	 							<button class="book-now-btn button ease-out">
@@ -537,15 +550,14 @@
    	 						</div>
    	 						<div class="item-view__bottom">
    	 							<div class="view__bottom-left">
-   	 								<img src="img/icons/printer-required.png" alt="printer required" class='printer-required'>
-   	 								<img src="img/icons/printer-empty.png" alt="printer required" class='printer-not-required'>
-   	 								<img src="img/icons/printer.png" alt="printer" class='printer-icon'>
+   	 								<img src="img/icons/Icon_printer_required.svg" alt="printer required" class='printer-required'>
+   	 								<img src="img/icons/Icon_printer_not_required.svg" alt="printer required" class='printer-not-required'>
    	 								<span class='required_span'>
    	 									Printer<br> required
    	 								</span>
    	 							</div>
    	 							<div class="view__bottom-right">
-   	 								<img src="img/icons/clock.png" alt="clock">
+   	 								<img src="img/icons/icon_clock.svg" alt="clock">
    	 								<p>
    	 									<span class='collect-today'>Collect today</span>
    	 									<span class='delivery_span'>Delivery Tue <span class='delivery'>19</span>th</span>
@@ -575,7 +587,7 @@
    	 									<span class='inc-vat'>inc VAT</span>
    	 								</h4>
    	 							</div>
-   	 							<img src="img/icons/upgrade-info-icon.png" alt="more info" class='more-info more-parcel-force'>
+   	 							<img src="img/icons/icon_info_grey.svg" alt="more info" class='more-info more-parcel-force'>
    	 						</div>
    	 						<div class="item-view__center">
    	 							<button class="book-now-btn button ease-out">
@@ -584,15 +596,14 @@
    	 						</div>
    	 						<div class="item-view__bottom">
    	 							<div class="view__bottom-left">
-   	 								<img src="img/icons/printer-required.png" alt="printer required" class='printer-required'>
-   	 								<img src="img/icons/printer-empty.png" alt="printer required" class='printer-not-required'>
-   	 								<img src="img/icons/printer.png" alt="printer" class='printer-icon'>
+   	 								<img src="img/icons/Icon_printer_required.svg" alt="printer required" class='printer-required'>
+   	 								<img src="img/icons/Icon_printer_not_required.svg" alt="printer required" class='printer-not-required'>
    	 								<span class='required_span'>
    	 									Printer<br> required
    	 								</span>
    	 							</div>
    	 							<div class="view__bottom-right">
-   	 								<img src="img/icons/clock.png" alt="clock">
+   	 								<img src="img/icons/icon_clock.svg" alt="clock">
    	 								<p>
    	 									<span class='collect-today'>Collect today</span>
    	 									<span class='delivery_span'>Delivery Tue <span class='delivery'>19</span>th</span>
@@ -633,7 +644,7 @@
    	 									<span class='inc-vat'>inc VAT</span>
    	 								</h4>
    	 							</div>
-   	 							<img src="img/icons/upgrade-info-icon.png" alt="more info" class='more-info more-parcel-force'>
+   	 							<img src="img/icons/icon_info_grey.svg" alt="more info" class='more-info more-parcel-force'>
    	 						</div>
    	 						<div class="item-view__center">
    	 							<button class="book-now-btn button ease-out">
@@ -642,15 +653,14 @@
    	 						</div>
    	 						<div class="item-view__bottom">
    	 							<div class="view__bottom-left">
-   	 								<img src="img/icons/printer-required.png" alt="printer required" class='printer-required'>
-   	 								<img src="img/icons/printer-empty.png" alt="printer required" class='printer-not-required'>
-   	 								<img src="img/icons/printer.png" alt="printer" class='printer-icon'>
+   	 								<img src="img/icons/Icon_printer_required.svg" alt="printer required" class='printer-required'>
+   	 								<img src="img/icons/Icon_printer_not_required.svg" alt="printer required" class='printer-not-required'>
    	 								<span class='required_span'>
    	 									Printer<br> required
    	 								</span>
    	 							</div>
    	 							<div class="view__bottom-right">
-   	 								<img src="img/icons/clock.png" alt="clock">
+   	 								<img src="img/icons/icon_clock.svg" alt="clock">
    	 								<p>
    	 									<span class='collect-today'>Collect today</span>
    	 									<span class='delivery_span'>Delivery Tue <span class='delivery'>19</span>th</span>
@@ -680,7 +690,7 @@
    	 									<span class='inc-vat'>inc VAT</span>
    	 								</h4>
    	 							</div>
-   	 							<img src="img/icons/upgrade-info-icon.png" alt="more info" class='more-info more-pickup'>
+   	 							<img src="img/icons/icon_info_grey.svg" alt="more info" class='more-info more-pickup'>
    	 						</div>
    	 						<div class="item-view__center">
    	 							<button class="book-now-btn button ease-out">
@@ -689,15 +699,14 @@
    	 						</div>
    	 						<div class="item-view__bottom">
    	 							<div class="view__bottom-left">
-   	 								<img src="img/icons/printer-required.png" alt="printer required" class='printer-required'>
-   	 								<img src="img/icons/printer-empty.png" alt="printer required" class='printer-not-required'>
-   	 								<img src="img/icons/printer.png" alt="printer" class='printer-icon'>
+   	 								<img src="img/icons/Icon_printer_required.svg" alt="printer required" class='printer-required'>
+   	 								<img src="img/icons/Icon_printer_not_required.svg" alt="printer required" class='printer-not-required'>
    	 								<span class='required_span'>
    	 									Printer<br> required
    	 								</span>
    	 							</div>
    	 							<div class="view__bottom-right">
-   	 								<img src="img/icons/clock.png" alt="clock">
+   	 								<img src="img/icons/icon_clock.svg" alt="clock">
    	 								<p>
    	 									<span class='collect-today'>Collect today</span>
    	 									<span class='delivery_span'>Delivery Tue <span class='delivery'>19</span>th</span>
@@ -727,7 +736,7 @@
    	 									<span class='inc-vat'>inc VAT</span>
    	 								</h4>
    	 							</div>
-   	 							<img src="img/icons/upgrade-info-icon.png" alt="more info" class='more-info more-dpd'>
+   	 							<img src="img/icons/icon_info_grey.svg" alt="more info" class='more-info more-dpd'>
    	 						</div>
    	 						<div class="item-view__center">
    	 							<button class="book-now-btn button ease-out">
@@ -736,15 +745,14 @@
    	 						</div>
    	 						<div class="item-view__bottom">
    	 							<div class="view__bottom-left">
-   	 								<img src="img/icons/printer-required.png" alt="printer required" class='printer-required'>
-   	 								<img src="img/icons/printer-empty.png" alt="printer required" class='printer-not-required'>
-   	 								<img src="img/icons/printer.png" alt="printer" class='printer-icon'>
+   	 								<img src="img/icons/Icon_printer_required.svg" alt="printer required" class='printer-required'>
+   	 								<img src="img/icons/Icon_printer_not_required.svg" alt="printer required" class='printer-not-required'>
    	 								<span class='required_span'>
    	 									Printer<br> required
    	 								</span>
    	 							</div>
    	 							<div class="view__bottom-right">
-   	 								<img src="img/icons/clock.png" alt="clock">
+   	 								<img src="img/icons/icon_clock.svg" alt="clock">
    	 								<p>
    	 									<span class='collect-today'>Collect today</span>
    	 									<span class='delivery_span'>Delivery Tue <span class='delivery'>19</span>th</span>
@@ -785,7 +793,7 @@
    	 									<span class='inc-vat'>inc VAT</span>
    	 								</h4>
    	 							</div>
-   	 							<img src="img/icons/upgrade-info-icon.png" alt="more info" class='more-info more-hermes'>
+   	 							<img src="img/icons/icon_info_grey.svg" alt="more info" class='more-info more-hermes'>
    	 						</div>
    	 						<div class="item-view__center">
    	 							<button class="book-now-btn button ease-out">
@@ -794,15 +802,14 @@
    	 						</div>
    	 						<div class="item-view__bottom">
    	 							<div class="view__bottom-left">
-   	 								<img src="img/icons/printer-required.png" alt="printer required" class='printer-required'>
-   	 								<img src="img/icons/printer-empty.png" alt="printer required" class='printer-not-required'>
-   	 								<img src="img/icons/printer.png" alt="printer" class='printer-icon'>
+   	 								<img src="img/icons/Icon_printer_required.svg" alt="printer required" class='printer-required'>
+   	 								<img src="img/icons/Icon_printer_not_required.svg" alt="printer required" class='printer-not-required'>
    	 								<span class='required_span'>
    	 									Printer<br> required
    	 								</span>
    	 							</div>
    	 							<div class="view__bottom-right">
-   	 								<img src="img/icons/place-icon.png" alt="clock">
+   	 								<img src="img/icons/icon_clock.svg" alt="clock">
    	 								<p>
    	 									<span class='drop-by_span'>0.3mi. Drop by <span class='drob-by'>11:45</span>am</span><br>
    	 									<span class='delivery_span'>Delivery Tue <span class='delivery'>19</span>th</span>
@@ -832,7 +839,7 @@
    	 									<span class='inc-vat'>inc VAT</span>
    	 								</h4>
    	 							</div>
-   	 							<img src="img/icons/upgrade-info-icon.png" alt="more info" class='more-info more-hermes'>
+   	 							<img src="img/icons/icon_info_grey.svg" alt="more info" class='more-info more-hermes'>
    	 						</div>
    	 						<div class="item-view__center">
    	 							<button class="book-now-btn button ease-out">
@@ -841,15 +848,14 @@
    	 						</div>
    	 						<div class="item-view__bottom">
    	 							<div class="view__bottom-left">
-   	 								<img src="img/icons/printer-required.png" alt="printer required" class='printer-required'>
-   	 								<img src="img/icons/printer-empty.png" alt="printer required" class='printer-not-required'>
-   	 								<img src="img/icons/printer.png" alt="printer" class='printer-icon'>
+   	 								<img src="img/icons/Icon_printer_required.svg" alt="printer required" class='printer-required'>
+   	 								<img src="img/icons/Icon_printer_not_required.svg" alt="printer required" class='printer-not-required'>
    	 								<span class='required_span'>
    	 									Printer<br> required
    	 								</span>
    	 							</div>
    	 							<div class="view__bottom-right">
-   	 								<img src="img/icons/place-icon.png" alt="clock">
+   	 								<img src="img/icons/icon_clock.svg" alt="clock">
    	 								<p>
    	 									<span class='drop-by_span'>0.3mi. Drop by <span class='drob-by'>11:45</span>am</span><br>
    	 									<span class='delivery_span'>Delivery Tue <span class='delivery'>19</span>th</span>
@@ -879,7 +885,7 @@
    	 									<span class='inc-vat'>inc VAT</span>
    	 								</h4>
    	 							</div>
-   	 							<img src="img/icons/upgrade-info-icon.png" alt="more info" class='more-info more-hermes'>
+   	 							<img src="img/icons/icon_info_grey.svg" alt="more info" class='more-info more-hermes'>
    	 						</div>
    	 						<div class="item-view__center">
    	 							<button class="book-now-btn button ease-out">
@@ -888,15 +894,14 @@
    	 						</div>
    	 						<div class="item-view__bottom">
    	 							<div class="view__bottom-left">
-   	 								<img src="img/icons/printer-required.png" alt="printer required" class='printer-required'>
-   	 								<img src="img/icons/printer-empty.png" alt="printer required" class='printer-not-required'>
-   	 								<img src="img/icons/printer.png" alt="printer" class='printer-icon'>
+   	 								<img src="img/icons/Icon_printer_required.svg" alt="printer required" class='printer-required'>
+   	 								<img src="img/icons/Icon_printer_not_required.svg" alt="printer required" class='printer-not-required'>
    	 								<span class='required_span'>
    	 									Printer<br> required
    	 								</span>
    	 							</div>
    	 							<div class="view__bottom-right">
-   	 								<img src="img/icons/drop-off-icon.png" alt="clock">
+   	 								<img src="img/icons/icon_clock.svg" alt="clock">
    	 								<p>
    	 									<span class='collect-today'>Collect today</span>
    	 									<span class='delivery_span'>Delivery Tue <span class='delivery'>21</span>st</span>

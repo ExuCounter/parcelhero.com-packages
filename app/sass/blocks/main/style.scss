@@ -10,8 +10,13 @@ $main-font: 'Roboto', sans-serif;
 
 }
 
+html{
+    overflow-x: hidden !important;
+}
+
 body{
 	background-color: #FFF;
+	overflow-x: hidden !important;
 
 }
 
