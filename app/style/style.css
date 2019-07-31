@@ -3,11 +3,13 @@
   padding: 0; }
 
 html {
-  overflow-x: hidden !important; }
+  overflow-x: hidden; }
 
 body {
   background-color: #FFF;
-  overflow-x: hidden !important; }
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
 
 h3 {
   color: #207dbb;
@@ -100,7 +102,7 @@ a:active {
   bottom: 0;
   right: 0;
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: scroll;
   z-index: 200; }
   .modal-wrapper .modal .modal-content {
     display: none;
@@ -145,34 +147,37 @@ a:active {
 
 .modal-wrapper #map {
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-color: grey;
   margin-top: 30px; }
 
-.modal-wrapper .modal_map .modal-map-content {
+.modal-wrapper .modal_map .modal-content-map {
   width: 70% !important; }
-  .modal-wrapper .modal_map .modal-map-content h5 {
+  .modal-wrapper .modal_map .modal-content-map h5 {
     font-size: 18px;
     color: #666666; }
-  .modal-wrapper .modal_map .modal-map-content .map-carriers {
-    display: flex;
-    margin: 20px 0px 30px 0px; }
-    .modal-wrapper .modal_map .modal-map-content .map-carriers .map-carriers__block {
+  .modal-wrapper .modal_map .modal-content-map .map-carriers {
+    margin: 20px 0px 30px 0px;
+    display: flex; }
+    .modal-wrapper .modal_map .modal-content-map .map-carriers .map-carriers__block {
       position: relative;
       cursor: pointer;
       padding: 10px;
       margin-right: 20px;
       border: solid 1px #c5c3c3;
       border-radius: 4px; }
-      .modal-wrapper .modal_map .modal-map-content .map-carriers .map-carriers__block img {
+      .modal-wrapper .modal_map .modal-content-map .map-carriers .map-carriers__block img {
         width: 107px;
         height: 47px; }
-    .modal-wrapper .modal_map .modal-map-content .map-carriers .map-carriers__block_active {
+      .modal-wrapper .modal_map .modal-content-map .map-carriers .map-carriers__block span {
+        display: none; }
+    .modal-wrapper .modal_map .modal-content-map .map-carriers .map-carriers__block_active {
       border: solid 1px #446dc1; }
 
 main {
   background-color: #ebeef5;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  flex: 1; }
   main .service-list-wrap {
     display: flex;
     justify-content: space-between; }
@@ -535,6 +540,7 @@ main {
       margin-left: 100px;
       padding: 17px;
       background-color: #FFF;
+      z-index: 999 !important;
       z-index: 1;
       box-shadow: 1px 1px 5px 3px #d9d6d685;
       border-radius: 4px; }
@@ -582,6 +588,11 @@ main {
         font-size: 12px;
         color: #666666;
         font-weight: 600; }
+    .choose-date .choose-date__left .choose-collection::-webkit-scrollbar, .drop-postcode .choose-date__left .choose-collection::-webkit-scrollbar, .drop-postcode .drop-postcode__left .choose-collection::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      border-radius: 4px;
+      background-color: #666666; }
 
 .drop-postcode {
   padding: 12px 0px 14px 0px; }
@@ -653,16 +664,37 @@ header {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px; } }
-
-main .service-list-wrap .service-list-col .view__bottom-right img {
-  margin: 7px 15px 0px 28px; }
+    max-width: 1200px; }
+  main .service-list-wrap .service-list-col .view__bottom-right img {
+    margin: 7px 15px 0px 28px; } }
 
 @media screen and (min-width: 992px) {
   .container {
     max-width: 1020px !important; }
   main .service-list-wrap .service-list-col .view__bottom-right img {
     margin: 7px 2px 0px 2px !important; } }
+
+@media screen and (max-width: 1200px) {
+  .map-carriers .map-carriers__block {
+    border: none !important;
+    padding: 0 !important; }
+    .map-carriers .map-carriers__block img {
+      display: none !important; }
+    .map-carriers .map-carriers__block span {
+      display: block !important;
+      margin: 10px 10px 0px 0px !important;
+      padding: 5px 10px;
+      border: solid 2px #446dc1;
+      border-radius: 5px;
+      background-color: #446dc1;
+      color: #FFF; }
+      .map-carriers .map-carriers__block span:hover {
+        color: #446dc1;
+        background-color: transparent; }
+  .map-carriers {
+    margin-bottom: 15px; }
+  .choose-collection {
+    margin-left: 0px !important; } }
 
 @media screen and (max-width: 992px) {
   .top-bar__block {
@@ -689,7 +721,25 @@ main .service-list-wrap .service-list-col .view__bottom-right img {
       display: block;
       margin: 0 auto; }
       main .service-list-wrap .service-list-col .view__bottom-right img {
-        margin: 7px 12px 0px 12px !important; } }
+        margin: 7px 12px 0px 12px !important; }
+  #map {
+    height: 260px !important; }
+  .modal-content-map {
+    width: 75% !important; }
+  .collection-wrap {
+    flex-direction: column; }
+  .date-week {
+    font-size: 15px; }
+  .date-time {
+    font-size: 14px; }
+  .collection-date__block, .choose-date .choose-date__left .choose-collection .collection-date__block--disabled, .drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled, .choose-date .choose-date__left .choose-collection .collection-time__block, .drop-postcode .choose-date__left .choose-collection .collection-time__block, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block {
+    padding: 10px 20px 10px 20px !important;
+    margin: 10px 0px;
+    width: 160px; }
+    .collection-date__block .date-day, .choose-date .choose-date__left .choose-collection .collection-date__block--disabled .date-day, .drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled .date-day, .choose-date .choose-date__left .choose-collection .collection-time__block .date-day, .drop-postcode .choose-date__left .choose-collection .collection-time__block .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block .date-day {
+      display: none !important; }
+  .collection-time__block {
+    text-align: center; } }
 
 @media screen and (max-width: 768px) {
   header {
@@ -735,7 +785,7 @@ main .service-list-wrap .service-list-col .view__bottom-right img {
             float: right;
             line-height: 30px; }
         #filters .filters__second-row .filter-buttons .filter-btn:hover, #filters .filters__second-row .filter-buttons .filter-btn_active:hover {
-          background-color: #4e77cb; }
+          background-color: #446dc1; }
   .drop-postcode .drop-postcode__left span {
     display: none; }
   .details-list, .options-list {
@@ -752,7 +802,22 @@ main .service-list-wrap .service-list-col .view__bottom-right img {
     margin: 0px 0px 0px 5px; }
   .filter-mobile-btn {
     display: block !important;
-    margin: 0px; } }
+    margin: 0px; }
+  .modal-content-map {
+    width: 80% !important; }
+  .found-locations-h5 {
+    display: none !important; }
+  .modal-wrapper #map {
+    height: 230px !important; }
+  #no-printer {
+    margin-top: 0px !important; }
+  .modal .modal-content-map {
+    width: 90% !important;
+    padding: 20px 20px 17px 24px !important; }
+    .modal .modal-content-map h5 {
+      display: none; }
+    .modal .modal-content-map .map-carriers {
+      flex-direction: column !important; } }
 
 @media screen and (max-width: 568px) {
   .top-bar__block {
@@ -778,7 +843,14 @@ main .service-list-wrap .service-list-col .view__bottom-right img {
   .upgrade-item .form-control {
     display: none !important; }
   .upgrade-item .upgrade-item-btn {
-    display: none !important; } }
+    display: none !important; }
+  .modal-wrapper #map {
+    height: 220px !important;
+    width: 96% !important;
+    margin-top: 15px !important; }
+  .close-btn, .close-choose-btn {
+    top: 8px;
+    right: 8px; } }
 
 @media screen and (max-width: 480px) {
   .top-bar__block {

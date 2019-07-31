@@ -257,6 +257,7 @@
       margin-left: 100px;
       padding: 17px;
       background-color: #FFF;
+      z-index: 999 !important;
       z-index: 1;
       box-shadow: 1px 1px 5px 3px #d9d6d685;
       border-radius: 4px; }
@@ -304,6 +305,11 @@
         font-size: 12px;
         color: #666666;
         font-weight: 600; }
+    .choose-date .choose-date__left .choose-collection::-webkit-scrollbar, .drop-postcode .choose-date__left .choose-collection::-webkit-scrollbar, .drop-postcode .drop-postcode__left .choose-collection::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      border-radius: 4px;
+      background-color: #666666; }
 
 .drop-postcode {
   padding: 12px 0px 14px 0px; }

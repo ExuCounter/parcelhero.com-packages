@@ -11,12 +11,15 @@ $main-font: 'Roboto', sans-serif;
 }
 
 html{
-    overflow-x: hidden !important;
+  overflow-x: hidden;
+
 }
 
 body{
 	background-color: #FFF;
-	overflow-x: hidden !important;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 
 }
 

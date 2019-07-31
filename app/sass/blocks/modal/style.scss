@@ -21,7 +21,7 @@
 		  right: 0;
 
 		  overflow-x: auto;
-		  overflow-y: hidden;
+		  overflow-y: scroll;
 
 		  z-index: 200;
 	  	.modal-content {
@@ -101,13 +101,13 @@
 
 	#map {
 		width: 100%;
-		height: 400px;
+		height: 300px;
 		background-color: grey;
 		margin-top: 30px;
 	}
 
 	.modal_map{
-	  .modal-map-content{
+	  .modal-content-map{
 	  	width: 70% !important;
 	    h5{
 	      font-size: 18px;
@@ -115,24 +115,28 @@
 
 	    }
 	    .map-carriers{
-	      display: flex;
 	      margin: 20px 0px 30px 0px;
-		  .map-carriers__block{
-		  	position: relative;
-		  	cursor: pointer;
 
-		  	padding: 10px;
-		  	margin-right: 20px;
+	      display: flex;
+			  .map-carriers__block{
+			  	position: relative;
+			  	cursor: pointer;
 
-		  	border: solid 1px #c5c3c3;
-		  	border-radius: 4px;
-		    img{
-		      width: 107px;
-		      height: 47px;
+			  	padding: 10px;
+			  	margin-right: 20px;
 
-		    }
+			  	border: solid 1px #c5c3c3;
+			  	border-radius: 4px;
+			    img{
+			      width: 107px;
+			      height: 47px;
 
-		  }
+			    }
+			    span{
+			    	display: none;
+			    }
+
+			  }
 		  .map-carriers__block_active{
         border: solid 1px $main-color;
 
