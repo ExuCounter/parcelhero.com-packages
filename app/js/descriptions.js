@@ -3,6 +3,8 @@ var first_desc = $('.first-description'),
     third_desc = $('.third-description'),
     fourth_desc = $('.fourth-description');
 
+/* Descriptions toggle */
+
 $(".first-upgrade").on("click", function(e) {
        $(first_desc).slideToggle();
 });

@@ -1,4 +1,4 @@
-// open modal
+// Open modal
 
 var wrap = $('.modal-wrapper'),
      info_btn = $('.more-info'),
@@ -25,7 +25,7 @@ close.on('click', function() {
   wrap.unbind('click');
 });
 
-// close modal
+// Close modal
 
 $('.modal').click(function() {
   wrap.on('click', function(event) {

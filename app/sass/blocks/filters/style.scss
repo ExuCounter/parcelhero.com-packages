@@ -469,7 +469,16 @@ $main-font: 'Roboto', sans-serif;
          border: solid 1px $main-color;
 
        }
+       .collection-time__block_active{
+         @extend .collection-date__block_active;
+
+       }
+       .collection-date__block--disabled{
+         @extend .collection-date__block;
+
+       }
        .collection-time__block{
+       	 @extend .collection-date__block;
          padding-bottom: 7px;
          margin-top: 10px;
 

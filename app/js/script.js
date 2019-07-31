@@ -2,9 +2,13 @@ var options_list = $('.options-list'),
     details_list = $('.details-list'),
     collection = $('.choose-collection');
 
+/* On click filter-mobile button => display: none options-list */
+
 $(".filter-mobile-btn").on("click", function(e) {
      $('.options-list').css({'display':'none'});
 });
+
+/* On click shipment button toggle options-list */
 
 $(".shipment-btn").on("click", function(e) {
 	if($(options_list).css('display') == 'none'){
@@ -14,6 +18,7 @@ $(".shipment-btn").on("click", function(e) {
      }
 });
 
+/* Modal map carries block toggle activity */
 
 $(".map-carriers__block").on("click", function(e) {
 
@@ -25,6 +30,7 @@ $(".map-carriers__block").on("click", function(e) {
 
 });
 
+/* Collection date button check on display: none and toggle */
 
 $(".collection-date-btn").on("click", function(e) {
     if($(collection).css('display') == 'none'){
@@ -33,6 +39,8 @@ $(".collection-date-btn").on("click", function(e) {
         $(collection).slideToggle();
      }
 });
+
+/* Close button */
 
 $(".close-choose-btn").on("click", function(e) {
     $('.choose-collection').slideToggle();

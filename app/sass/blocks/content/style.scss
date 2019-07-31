@@ -63,11 +63,12 @@ main{
               }
               .printer-required{
                 @extend .printer-icon;
+                display: none;
 
               }
               .printer-not-required{
               	@extend .printer-icon;
-                display: none;
+                display: inline-block;
 
               }
               span{
@@ -115,6 +116,17 @@ main{
             }
 
           }
+
+        }
+
+      }
+      .printer-none{
+        .printer-required{
+          display: inline-block !important;
+
+        }
+        .printer-not-required{
+          display: none !important;
 
         }
 
