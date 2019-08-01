@@ -58,7 +58,7 @@ a:active {
   float: right; }
 
 .dark-btn {
-  background-color: #446dc1; }
+  background-color: #347DC0; }
 
 .ease-out {
   transition: all 0.3s; }
@@ -172,11 +172,11 @@ a:active {
       .modal-wrapper .modal_map .modal-content-map .map-carriers .map-carriers__block span {
         display: none; }
     .modal-wrapper .modal_map .modal-content-map .map-carriers .map-carriers__block_active {
-      border: solid 1px #446dc1; }
+      border: solid 1px #347DC0; }
   .modal-wrapper .modal_map .modal-content-map .select-carrier-btn {
     background-color: transparent;
-    color: #446dc1;
-    border: solid 2px #446dc1;
+    color: #347DC0;
+    border: solid 2px #347DC0;
     display: none; }
 
 main {
@@ -273,12 +273,15 @@ main {
           font-size: 12px;
           color: #5D7E99; }
         main .item-view__head .view__head-right h3 .ship-cost {
-          font-weight: bold; }
+          font-weight: bold;
+          margin-left: -7px; }
       main .item-view__head .view__head-right h4 {
         color: #999999;
         font-size: 16px; }
         main .item-view__head .view__head-right h4 .inc-vat {
           font-size: 12px; }
+        main .item-view__head .view__head-right h4 .new-price {
+          margin-left: -4px; }
     main .item-view__head .more-info {
       position: absolute;
       top: -7px;
@@ -396,26 +399,26 @@ main {
 .filters__second-row {
   padding: 20px 0px 20px 0px; }
   .filters__second-row .filter-buttons .filter-btn, .filters__second-row .filter-buttons .filter-btn_active {
-    border: solid 1px #446dc1;
+    border: solid 1px #347DC0;
     background-color: transparent;
-    color: #446dc1;
+    color: #347DC0;
     padding: 10px 10px 10px 10px;
     margin: 0px 15px 0px 0px; }
     .filters__second-row .filter-buttons .filter-btn .filter-btn__title, .filters__second-row .filter-buttons .filter-btn_active .filter-btn__title {
       font-size: 20px;
       font-weight: 600;
-      color: #446dc1;
+      color: #347DC0;
       display: block; }
     .filters__second-row .filter-buttons .filter-btn span, .filters__second-row .filter-buttons .filter-btn_active span {
       font-size: 14px;
       color: #999999; }
     .filters__second-row .filter-buttons .filter-btn:hover, .filters__second-row .filter-buttons .filter-btn_active:hover {
-      background-color: #446dc1;
-      color: #FFF; }
+      background-color: #F0F6FB;
+      color: #347DC0; }
       .filters__second-row .filter-buttons .filter-btn:hover span, .filters__second-row .filter-buttons .filter-btn_active:hover span {
-        color: #FFF; }
+        color: #347DC0; }
   .filters__second-row .filter-buttons .filter-btn_active {
-    background-color: #446dc1;
+    background-color: #347DC0;
     color: #FFF; }
     .filters__second-row .filter-buttons .filter-btn_active .filter-btn__title {
       color: #FFF; }
@@ -426,14 +429,16 @@ main {
     background-color: transparent;
     color: #15DCA6;
     cursor: pointer;
-    border: solid 1px #15DCA6; }
+    text-transform: uppercase;
+    border: solid 1px #15DCA6;
+    font-size: 14px; }
     .filters__second-row .shipment-btn:hover, .filters__second-row .filter-mobile-btn:hover {
       background-color: #15DCA6;
       color: #FFF; }
   .filters__second-row .filter-mobile-btn {
-    color: #446dc1;
+    color: #347DC0;
     background-color: transparent;
-    border: solid 1px #446dc1;
+    border: solid 1px #347DC0;
     display: none; }
 
 .options-list {
@@ -531,7 +536,7 @@ main {
       .choose-date .choose-date__left .collect-today-btn input, .drop-postcode .choose-date__left .collect-today-btn input, .drop-postcode .drop-postcode__left .collect-today-btn input, .choose-date .choose-date__left .collection-date-btn input, .drop-postcode .choose-date__left .collection-date-btn input, .drop-postcode .drop-postcode__left .collection-date-btn input {
         margin-right: 10px; }
     .choose-date .choose-date__left .collect-today-btn_active, .drop-postcode .choose-date__left .collect-today-btn_active, .drop-postcode .drop-postcode__left .collect-today-btn_active {
-      border: solid 1.5px #446dc1; }
+      border: solid 1.5px #347DC0; }
     .choose-date .choose-date__left .collection-date-btn, .drop-postcode .choose-date__left .collection-date-btn, .drop-postcode .drop-postcode__left .collection-date-btn {
       margin-left: 15px; }
       .choose-date .choose-date__left .collection-date-btn img, .drop-postcode .choose-date__left .collection-date-btn img, .drop-postcode .drop-postcode__left .collection-date-btn img {
@@ -581,7 +586,7 @@ main {
           .choose-date .choose-date__left .choose-collection .collection-date__block:nth-child(5) .date-day, .drop-postcode .choose-date__left .choose-collection .collection-date__block:nth-child(5) .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block:nth-child(5) .date-day, .choose-date .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(5) .date-day, .drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(5) .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled:nth-child(5) .date-day, .choose-date .choose-date__left .choose-collection .collection-time__block:nth-child(5) .date-day, .drop-postcode .choose-date__left .choose-collection .collection-time__block:nth-child(5) .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block:nth-child(5) .date-day {
             color: #CCCCCC; }
       .choose-date .choose-date__left .choose-collection .collection-date__block_active, .drop-postcode .choose-date__left .choose-collection .collection-date__block_active, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block_active, .choose-date .choose-date__left .choose-collection .collection-time__block_active, .drop-postcode .choose-date__left .choose-collection .collection-time__block_active, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block_active {
-        border: solid 1px #446dc1; }
+        border: solid 1px #347DC0; }
       .choose-date .choose-date__left .choose-collection .collection-time__block, .drop-postcode .choose-date__left .choose-collection .collection-time__block, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block {
         padding-bottom: 7px;
         margin-top: 10px;
@@ -611,8 +616,8 @@ main {
     .drop-postcode .drop-postcode__left .view-drop-btn img {
       margin: 0px 7px 0px 0px; }
     .drop-postcode .drop-postcode__left .view-drop-btn:hover {
-      color: #446dc1;
-      border: solid 1px #446dc1; }
+      color: #347DC0;
+      border: solid 1px #347DC0; }
   .drop-postcode .drop-postcode__left span {
     font-size: 14px;
     color: #999999;
@@ -628,8 +633,8 @@ main {
       width: 250px; }
     .drop-postcode .drop-postcode__left form input[type='submit'] {
       color: #FFF;
-      border: solid 1px #446dc1;
-      background-color: #446dc1;
+      border: solid 1px #347DC0;
+      background-color: #347DC0;
       text-transform: uppercase;
       position: absolute;
       top: 0;
@@ -639,11 +644,11 @@ main {
       border-radius: 3px;
       padding: 13px 15px; }
       .drop-postcode .drop-postcode__left form input[type='submit']:hover {
-        background-color: #3059ad; }
+        background-color: #2069ac; }
 
 header {
   padding: 20px;
-  border-bottom: solid 5px #446dc1;
+  border-bottom: solid 5px #347DC0;
   font-family: "Roboto", sans-serif; }
   header .logo-img {
     max-width: 200px; }
@@ -656,9 +661,9 @@ header {
     display: flex;
     justify-content: center; }
     .top-bar .top-bar__block .top-bar__icon {
-      max-width: 30px;
-      max-height: 28px;
-      margin: 10px 05px 0px 0px;
+      max-width: 34px;
+      max-height: 32px;
+      margin: 8px 14px 0px 0px;
       vertical-align: top; }
     .top-bar .top-bar__block strong {
       display: block; }
@@ -689,12 +694,12 @@ header {
       display: block !important;
       margin: 10px 10px 0px 0px !important;
       padding: 5px 10px;
-      border: solid 2px #446dc1;
+      border: solid 2px #347DC0;
       border-radius: 5px;
-      background-color: #446dc1;
+      background-color: #347DC0;
       color: #FFF; }
       .map-carriers .map-carriers__block span:hover {
-        color: #446dc1;
+        color: #347DC0;
         background-color: transparent; }
   .map-carriers {
     margin-bottom: 15px; }

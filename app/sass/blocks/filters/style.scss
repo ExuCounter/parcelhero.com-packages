@@ -1,4 +1,4 @@
-$main-color: #446dc1;
+$main-color: #347DC0;
 $background-color: #FFF;
 $main-font: 'Roboto', sans-serif;
 
@@ -187,10 +187,10 @@ $main-font: 'Roboto', sans-serif;
 
       }
       &:hover{
-      	background-color: $main-color;
-        color: #FFF;
+      	background-color: #F0F6FB;
+        color: $main-color;
         span{
-          color: #FFF;
+          color: $main-color;
 
         }
 
@@ -220,7 +220,10 @@ $main-font: 'Roboto', sans-serif;
     color: #15DCA6;
     cursor: pointer;
 
+    text-transform: uppercase;
+
     border: solid 1px #15DCA6;
+    font-size: 14px;
     &:hover{
       background-color: #15DCA6;
       color: #FFF;

@@ -108,26 +108,26 @@
 .filters__second-row {
   padding: 20px 0px 20px 0px; }
   .filters__second-row .filter-buttons .filter-btn, .filters__second-row .filter-buttons .filter-btn_active {
-    border: solid 1px #446dc1;
+    border: solid 1px #347DC0;
     background-color: transparent;
-    color: #446dc1;
+    color: #347DC0;
     padding: 10px 10px 10px 10px;
     margin: 0px 15px 0px 0px; }
     .filters__second-row .filter-buttons .filter-btn .filter-btn__title, .filters__second-row .filter-buttons .filter-btn_active .filter-btn__title {
       font-size: 20px;
       font-weight: 600;
-      color: #446dc1;
+      color: #347DC0;
       display: block; }
     .filters__second-row .filter-buttons .filter-btn span, .filters__second-row .filter-buttons .filter-btn_active span {
       font-size: 14px;
       color: #999999; }
     .filters__second-row .filter-buttons .filter-btn:hover, .filters__second-row .filter-buttons .filter-btn_active:hover {
-      background-color: #446dc1;
-      color: #FFF; }
+      background-color: #F0F6FB;
+      color: #347DC0; }
       .filters__second-row .filter-buttons .filter-btn:hover span, .filters__second-row .filter-buttons .filter-btn_active:hover span {
-        color: #FFF; }
+        color: #347DC0; }
   .filters__second-row .filter-buttons .filter-btn_active {
-    background-color: #446dc1;
+    background-color: #347DC0;
     color: #FFF; }
     .filters__second-row .filter-buttons .filter-btn_active .filter-btn__title {
       color: #FFF; }
@@ -138,14 +138,16 @@
     background-color: transparent;
     color: #15DCA6;
     cursor: pointer;
-    border: solid 1px #15DCA6; }
+    text-transform: uppercase;
+    border: solid 1px #15DCA6;
+    font-size: 14px; }
     .filters__second-row .shipment-btn:hover, .filters__second-row .filter-mobile-btn:hover {
       background-color: #15DCA6;
       color: #FFF; }
   .filters__second-row .filter-mobile-btn {
-    color: #446dc1;
+    color: #347DC0;
     background-color: transparent;
-    border: solid 1px #446dc1;
+    border: solid 1px #347DC0;
     display: none; }
 
 .options-list {
@@ -243,7 +245,7 @@
       .choose-date .choose-date__left .collect-today-btn input, .drop-postcode .choose-date__left .collect-today-btn input, .drop-postcode .drop-postcode__left .collect-today-btn input, .choose-date .choose-date__left .collection-date-btn input, .drop-postcode .choose-date__left .collection-date-btn input, .drop-postcode .drop-postcode__left .collection-date-btn input {
         margin-right: 10px; }
     .choose-date .choose-date__left .collect-today-btn_active, .drop-postcode .choose-date__left .collect-today-btn_active, .drop-postcode .drop-postcode__left .collect-today-btn_active {
-      border: solid 1.5px #446dc1; }
+      border: solid 1.5px #347DC0; }
     .choose-date .choose-date__left .collection-date-btn, .drop-postcode .choose-date__left .collection-date-btn, .drop-postcode .drop-postcode__left .collection-date-btn {
       margin-left: 15px; }
       .choose-date .choose-date__left .collection-date-btn img, .drop-postcode .choose-date__left .collection-date-btn img, .drop-postcode .drop-postcode__left .collection-date-btn img {
@@ -293,7 +295,7 @@
           .choose-date .choose-date__left .choose-collection .collection-date__block:nth-child(5) .date-day, .drop-postcode .choose-date__left .choose-collection .collection-date__block:nth-child(5) .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block:nth-child(5) .date-day, .choose-date .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(5) .date-day, .drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(5) .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled:nth-child(5) .date-day, .choose-date .choose-date__left .choose-collection .collection-time__block:nth-child(5) .date-day, .drop-postcode .choose-date__left .choose-collection .collection-time__block:nth-child(5) .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block:nth-child(5) .date-day {
             color: #CCCCCC; }
       .choose-date .choose-date__left .choose-collection .collection-date__block_active, .drop-postcode .choose-date__left .choose-collection .collection-date__block_active, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block_active, .choose-date .choose-date__left .choose-collection .collection-time__block_active, .drop-postcode .choose-date__left .choose-collection .collection-time__block_active, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block_active {
-        border: solid 1px #446dc1; }
+        border: solid 1px #347DC0; }
       .choose-date .choose-date__left .choose-collection .collection-time__block, .drop-postcode .choose-date__left .choose-collection .collection-time__block, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block {
         padding-bottom: 7px;
         margin-top: 10px;
@@ -323,8 +325,8 @@
     .drop-postcode .drop-postcode__left .view-drop-btn img {
       margin: 0px 7px 0px 0px; }
     .drop-postcode .drop-postcode__left .view-drop-btn:hover {
-      color: #446dc1;
-      border: solid 1px #446dc1; }
+      color: #347DC0;
+      border: solid 1px #347DC0; }
   .drop-postcode .drop-postcode__left span {
     font-size: 14px;
     color: #999999;
@@ -340,8 +342,8 @@
       width: 250px; }
     .drop-postcode .drop-postcode__left form input[type='submit'] {
       color: #FFF;
-      border: solid 1px #446dc1;
-      background-color: #446dc1;
+      border: solid 1px #347DC0;
+      background-color: #347DC0;
       text-transform: uppercase;
       position: absolute;
       top: 0;
@@ -351,4 +353,4 @@
       border-radius: 3px;
       padding: 13px 15px; }
       .drop-postcode .drop-postcode__left form input[type='submit']:hover {
-        background-color: #3059ad; }
+        background-color: #2069ac; }

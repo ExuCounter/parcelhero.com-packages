@@ -34,9 +34,9 @@ $(".map-carriers__block").on("click", function(e) {
 
 $(".collection-date-btn").on("click", function(e) {
     if($(collection).css('display') == 'none'){
-       $(collection).slideToggle();
+       $(collection).toggle();
      } else{
-        $(collection).slideToggle();
+        $(collection).toggle();
      }
 });
 
