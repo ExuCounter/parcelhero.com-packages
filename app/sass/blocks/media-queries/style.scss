@@ -355,6 +355,7 @@
       } 
       .map-carriers{
         flex-direction: column !important;
+        margin: 0px !important;
         .map-carriers__block{
           display: none;
 
@@ -446,8 +447,8 @@
    
   }
   .close-btn{
-    top: 8px;
-    right: 8px;
+    top: 16px;
+    right: 16px;
 
   }
   .service-wrap{

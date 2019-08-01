@@ -830,7 +830,8 @@ header {
     .modal .modal-content h5 {
       display: none; }
     .modal .modal-content .map-carriers {
-      flex-direction: column !important; }
+      flex-direction: column !important;
+      margin: 0px !important; }
       .modal .modal-content .map-carriers .map-carriers__block {
         display: none; } }
 
@@ -866,8 +867,8 @@ header {
   .modal-wrapper .modal .modal-content {
     width: 90% !important; }
   .close-btn, .close-choose-btn {
-    top: 8px;
-    right: 8px; }
+    top: 16px;
+    right: 16px; }
   .service-wrap {
     flex-direction: column !important; }
     .service-wrap .service-conditions-col {

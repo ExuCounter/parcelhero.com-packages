@@ -4,14 +4,24 @@
     padding: 0;
 }
 
+html
+{
+    overflow-x: hidden;
+}
+
 body
 {
+    display: flex;
+    flex-direction: column; 
+
+    min-height: 100vh;
+
     background-color: #fff;
 }
 
 h3
 {
-    font-size: 24px;
+    font-size: 24px; 
 
     color: #207dbb;
 }
@@ -20,14 +30,14 @@ a:hover,
 a:focus,
 a:active
 {
-    text-decoration: none !important;
+    text-decoration: none !important; 
 
     color: #446dc1;
 }
 
 .container
 {
-    position: relative;
+    position: relative; 
 
     width: 1140px;
     margin: 0 auto;
@@ -36,7 +46,7 @@ a:active
 .clearfix::after
 {
     display: table;
-    clear: both;
+    clear: both; 
 
     content: '';
 }
@@ -73,7 +83,7 @@ a:active
     color: #fff;
     border: none;
     border-radius: 6px;
-    outline: none !important;
+    outline: none !important; 
     background-color: transparent;
 }
 
@@ -94,13 +104,13 @@ a:active
 
 .visually-hidden
 {
-    display: none;
+    display: none; 
     visibility: hidden;
 }
 
 .book-now-btn
 {
-    display: block;
+    display: block; 
 
     width: 100%;
 
@@ -111,14 +121,8 @@ a:active
 }
 .book-now-btn:hover
 {
-    color: #2edba2;
+    color: #2edba2; 
     background-color: transparent;
-}
-
-.active
-{
-    display: block !important;
-    visibility: visible;
 }
 
 .close-btn,
@@ -143,14 +147,14 @@ a:active
     width: 100%;
     height: 100%;
 
-    opacity: .6;
+    opacity: .6; 
     background: #000;
 }
 
 .modal-wrapper .modal
 {
     position: fixed;
-    z-index: 200;
+    z-index: 200; 
     top: 0;
     right: 0;
     bottom: 0;
@@ -158,7 +162,7 @@ a:active
 
     display: none;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 .modal-wrapper .modal .modal-content
 {
@@ -174,7 +178,7 @@ a:active
     padding: 34px 34px 27px 34px;
 
     transform: translate(-50%, -50%);
-    vertical-align: top;
+    vertical-align: top; 
 
     background-color: #fff;
 }
@@ -196,14 +200,14 @@ a:active
 
     display: block;
 
-    padding-bottom: 15px;
+    padding-bottom: 15px; 
 
     color: #277fbf;
 }
 .modal-wrapper .modal .modal-content .service-wrap .service-benefits-col p,
 .modal-wrapper .modal .modal-content .service-wrap .service-conditions-col p
 {
-    font-size: 14px;
+    font-size: 14px; 
 
     position: relative;
 
@@ -213,7 +217,7 @@ a:active
 .modal-wrapper .modal .modal-content .service-wrap .service-conditions-col p:after
 {
     position: absolute;
-    top: 2px;
+    top: 2px; 
     left: -25px;
 
     content: url(../img/icons/circle-ok.png);
@@ -237,29 +241,29 @@ a:active
 .modal-wrapper #map
 {
     width: 100%;
-    height: 400px;
-    margin-top: 30px;
+    height: 300px;
+    margin-top: 30px; 
 
     background-color: grey;
 }
 
-.modal-wrapper .modal_map .modal-map-content
+.modal-wrapper .modal_map .modal-content-map
 {
     width: 70% !important;
 }
-.modal-wrapper .modal_map .modal-map-content h5
+.modal-wrapper .modal_map .modal-content-map h5
 {
     font-size: 18px;
 
     color: #666;
 }
-.modal-wrapper .modal_map .modal-map-content .map-carriers
+.modal-wrapper .modal_map .modal-content-map .map-carriers
 {
-    display: flex;
+    display: flex; 
 
     margin: 20px 0 30px 0;
 }
-.modal-wrapper .modal_map .modal-map-content .map-carriers .map-carriers__block
+.modal-wrapper .modal_map .modal-content-map .map-carriers .map-carriers__block
 {
     position: relative;
 
@@ -271,14 +275,26 @@ a:active
     border: solid 1px #c5c3c3;
     border-radius: 4px;
 }
-.modal-wrapper .modal_map .modal-map-content .map-carriers .map-carriers__block img
+.modal-wrapper .modal_map .modal-content-map .map-carriers .map-carriers__block img
 {
     width: 107px;
     height: 47px;
 }
-.modal-wrapper .modal_map .modal-map-content .map-carriers .map-carriers__block_active
+.modal-wrapper .modal_map .modal-content-map .map-carriers .map-carriers__block span
+{
+    display: none;
+}
+.modal-wrapper .modal_map .modal-content-map .map-carriers .map-carriers__block_active
 {
     border: solid 1px #446dc1;
+}
+.modal-wrapper .modal_map .modal-content-map .select-carrier-btn
+{
+    display: none; 
+
+    color: #446dc1;
+    border: solid 2px #446dc1;
+    background-color: transparent;
 }
 
 main
@@ -286,6 +302,8 @@ main
     font-family: 'Roboto', sans-serif;
 
     background-color: #ebeef5;
+
+    flex: 1;
 }
 main .service-list-wrap
 {
@@ -303,7 +321,7 @@ main .service-list-wrap .service-list-col .service-list-head .service-label h3
 
     position: relative;
 
-    padding: 25px 0 35px 0;
+    padding: 25px 0 35px 0; 
 
     text-align: center;
 
@@ -315,7 +333,7 @@ main .service-list-wrap .service-list-col .service-list-head .service-label h3:a
     top: 0;
     left: 50%;
 
-    width: 24px;
+    width: 24px; 
     margin-top: 60px;
     margin-left: -12px;
 
@@ -332,7 +350,7 @@ main .service-list-wrap .service-list .service-item
 {
     margin-bottom: 20px;
 
-    border-radius: 3px;
+    border-radius: 3px; 
     background-color: #fff;
 }
 main .service-list-wrap .service-list .service-item .item-view
@@ -347,31 +365,23 @@ main .service-list-wrap .service-list .service-item .item-view .item-view__botto
 {
     font-size: 14px;
 }
-main .service-list-wrap .service-list .service-item .item-view .item-view__bottom .view__bottom-left .printer-icon
+main .service-list-wrap .service-list .service-item .item-view .item-view__bottom .view__bottom-left .printer-icon,
+main .service-list-wrap .service-list .service-item .item-view .item-view__bottom .view__bottom-left .printer-required,
+main .service-list-wrap .service-list .service-item .item-view .item-view__bottom .view__bottom-left .printer-not-required
 {
     position: relative;
 
-    margin: 8px 0 0 0;
+    margin: 8px 0 0 0; 
 
     vertical-align: top;
 }
 main .service-list-wrap .service-list .service-item .item-view .item-view__bottom .view__bottom-left .printer-required
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    margin: 4px 0 0 21px;
+    display: none;
 }
 main .service-list-wrap .service-list .service-item .item-view .item-view__bottom .view__bottom-left .printer-not-required
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: none;
-
-    margin: 1px 0 0 21px;
+    display: inline-block;
 }
 main .service-list-wrap .service-list .service-item .item-view .item-view__bottom .view__bottom-left span
 {
@@ -397,7 +407,7 @@ main .service-list-wrap .service-list .service-item .item-view .item-view__botto
 }
 main .service-list-wrap .service-list .service-item .item-view .item-view__bottom .view__bottom-right img
 {
-    margin: 8px 7px 0 30px;
+    margin: 7px 2px 0 2px; 
 
     vertical-align: top;
 }
@@ -407,15 +417,24 @@ main .service-list-wrap .service-list .service-item .item-view .item-view__botto
 }
 main .service-list-wrap .service-list .service-item .item-view .item-view__bottom .view__bottom-right .drop-by_span
 {
+    font-size: 13px; 
     font-weight: 600;
 
     color: #666;
 }
 main .service-list-wrap .service-list .service-item .item-view .item-view__bottom *
 {
-    position: relative;
+    position: relative; 
 
     display: inline-block;
+}
+main .service-list-wrap .service-list .printer-none .printer-required
+{
+    display: inline-block !important;
+}
+main .service-list-wrap .service-list .printer-none .printer-not-required
+{
+    display: none !important;
 }
 main .item-view__head
 {
@@ -427,7 +446,7 @@ main .item-view__head .company-icon
 
     max-width: 120px;
     height: 51px;
-    margin-right: 15px;
+    margin-right: 15px; 
 
     vertical-align: top;
 }
@@ -445,7 +464,7 @@ main .item-view__head .view__head-right
 }
 main .item-view__head .view__head-right h3
 {
-    font-size: 26px;
+    font-size: 26px; 
 
     display: block;
 
@@ -463,7 +482,7 @@ main .item-view__head .view__head-right h3 .ship-cost
 }
 main .item-view__head .view__head-right h4
 {
-    font-size: 16px;
+    font-size: 16px; 
 
     color: #999;
 }
@@ -474,8 +493,10 @@ main .item-view__head .view__head-right h4 .inc-vat
 main .item-view__head .more-info
 {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -7px;
+    right: -7px;
+
+    width: 20px; 
 
     cursor: pointer;
 }
@@ -494,7 +515,7 @@ main .item-view__head .more-info
 .filters__first-row
 {
     position: relative;
-    z-index: 2;
+    z-index: 2; 
 
     margin: 0 18px 40px 0;
 }
@@ -517,7 +538,7 @@ main .item-view__head .more-info
 }
 .filters__first-row .filters--found-services .found-services__email
 {
-    position: relative;
+    position: relative; 
 
     margin-left: 25px;
 }
@@ -528,7 +549,7 @@ main .item-view__head .more-info
     left: 0;
 
     margin-top: 1px;
-    margin-left: -25px;
+    margin-left: -25px; 
 
     content: url(../img/icons/email.png);
 }
@@ -541,7 +562,7 @@ main .item-view__head .more-info
     margin: 2px 0 0 0;
 
     color: #9ca0a8;
-    border-radius: 6px;
+    border-radius: 6px; 
     background-color: #f1f3f9;
 
     align-items: center;
@@ -553,21 +574,30 @@ main .item-view__head .more-info
 .filters__first-row .filter--found-sizes .found-sizes__dimens:after
 {
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 10px;
 
-    margin-top: 2px;
+    margin-top: 2px; 
     margin-left: 10px;
 
     content: url(../img/icons/package-icon.png);
+}
+.filters__first-row .filter--found-sizes .found-sizes__edit
+{
+    margin-left: 30px;
 }
 .filters__first-row .filter--found-sizes .found-sizes__edit a
 {
     padding: 0 6px 3px 6px;
 
     color: #fff;
-    border-radius: 3px;
+    border-radius: 3px; 
     background-color: #99cbec;
+}
+.filters__first-row .filter--found-sizes .found-sizes__wrap
+{
+    display: flex;
+
+    justify-content: space-around;
 }
 
 .details-list,
@@ -577,7 +607,7 @@ main .item-view__head .more-info
 
     display: none;
 
-    padding: 30px 20px 28px 20px;
+    padding: 30px 20px 28px 20px; 
 
     transform-origin: top !important;
 
@@ -596,7 +626,7 @@ main .item-view__head .more-info
     display: block;
 
     content: '';
-    transform: rotate(135deg);
+    transform: rotate(135deg); 
 
     border-top: 12px solid transparent;
     border-left: 12px solid #e6e5e5;
@@ -604,7 +634,7 @@ main .item-view__head .more-info
 .details-list .info-input,
 .options-list .info-input
 {
-    display: inline-block;
+    display: inline-block; 
 
     width: 14%;
     margin-right: 10px;
@@ -621,7 +651,7 @@ main .item-view__head .more-info
 {
     font-weight: bold;
 
-    margin-left: 20px;
+    margin-left: 20px; 
 
     color: #226d9f;
 }
@@ -652,13 +682,13 @@ main .item-view__head .more-info
     color: #fff;
     border: solid 1px #989898;
     border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px; 
     background-color: #c7c7c7;
 }
 .details-list .results-update-btn,
 .options-list .results-update-btn
 {
-    margin-top: 12px;
+    margin-top: 12px; 
 
     cursor: default;
 }
@@ -670,9 +700,8 @@ main .item-view__head .more-info
 .filters__second-row .filter-buttons .filter-btn,
 .filters__second-row .filter-buttons .filter-btn_active
 {
-    width: 16%;
-    margin-right: 12px;
-    padding: 10px 8px 10px 18px;
+    margin: 0 15px 0 0; 
+    padding: 10px 10px 10px 10px;
 
     color: #446dc1;
     border: solid 1px #446dc1;
@@ -684,7 +713,7 @@ main .item-view__head .more-info
     font-size: 20px;
     font-weight: 600;
 
-    display: block;
+    display: block; 
 
     color: #446dc1;
 }
@@ -698,7 +727,7 @@ main .item-view__head .more-info
 .filters__second-row .filter-buttons .filter-btn:hover,
 .filters__second-row .filter-buttons .filter-btn_active:hover
 {
-    color: #fff;
+    color: #fff; 
     background-color: #446dc1;
 }
 .filters__second-row .filter-buttons .filter-btn:hover span,
@@ -708,7 +737,7 @@ main .item-view__head .more-info
 }
 .filters__second-row .filter-buttons .filter-btn_active
 {
-    color: #fff;
+    color: #fff; 
     background-color: #446dc1;
 }
 .filters__second-row .filter-buttons .filter-btn_active .filter-btn__title
@@ -719,20 +748,30 @@ main .item-view__head .more-info
 {
     color: #fff;
 }
-.filters__second-row .shipment-btn
+.filters__second-row .shipment-btn,
+.filters__second-row .filter-mobile-btn
 {
     margin-right: 15px;
 
     cursor: pointer;
 
     color: #15dca6;
-    border: solid 1px #15dca6;
+    border: solid 1px #15dca6; 
     background-color: transparent;
 }
-.filters__second-row .shipment-btn:hover
+.filters__second-row .shipment-btn:hover,
+.filters__second-row .filter-mobile-btn:hover
 {
-    color: #fff;
+    color: #fff; 
     background-color: #15dca6;
+}
+.filters__second-row .filter-mobile-btn
+{
+    display: none; 
+
+    color: #446dc1;
+    border: solid 1px #446dc1;
+    background-color: transparent;
 }
 
 .options-list
@@ -753,7 +792,7 @@ main .item-view__head .more-info
     display: block;
 
     content: '';
-    transform: rotate(135deg);
+    transform: rotate(135deg); 
 
     border-top: 12px solid transparent;
     border-left: 12px solid #e6e5e5;
@@ -774,19 +813,19 @@ main .item-view__head .more-info
 
     color: #9195a2;
     border: 1px solid #dcdfe7;
-    border-left-width: 10px;
+    border-left-width: 10px; 
     border-radius: 5px;
     background: #fff;
 }
 .options-list ul .upgrade-item a
 {
-    font-size: 14px;
+    font-size: 14px; 
 
     color: #337ab7;
 }
 .options-list ul .upgrade-item .upgrade-item__icon
 {
-    position: relative;
+    position: relative; 
 
     width: 28px;
 }
@@ -794,7 +833,7 @@ main .item-view__head .more-info
 {
     position: relative;
 
-    display: inline-block;
+    display: inline-block; 
 
     vertical-align: top;
 }
@@ -832,7 +871,7 @@ main .item-view__head .more-info
 }
 .options-list ul .upgrade-item img
 {
-    margin-top: 2px;
+    margin-top: 2px; 
 
     vertical-align: top;
 }
@@ -850,7 +889,7 @@ main .item-view__head .more-info
 
     color: inherit;
     border: 1px solid #e2e2e2;
-    border-radius: 4px;
+    border-radius: 4px; 
     background: #f5f5f5;
 }
 .options-list ul .upgrade-item .text-description_active
@@ -858,20 +897,29 @@ main .item-view__head .more-info
     display: block;
 }
 
-.choose-date
+.choose-date,
+.drop-postcode
 {
-    padding: 12px 0 16px 0;
+    display: none;
+
+    padding: 12px 0 16px 0; 
 
     border-top: solid .5px #898989;
 }
-.choose-date .choose-date__left
+.choose-date .choose-date__left,
+.drop-postcode .choose-date__left,
+.drop-postcode .drop-postcode__left
 {
-    position: relative;
+    position: relative; 
 
     display: flex;
 }
 .choose-date .choose-date__left .collect-today-btn,
-.choose-date .choose-date__left .collection-date-btn
+.drop-postcode .choose-date__left .collect-today-btn,
+.drop-postcode .drop-postcode__left .collect-today-btn,
+.choose-date .choose-date__left .collection-date-btn,
+.drop-postcode .choose-date__left .collection-date-btn,
+.drop-postcode .drop-postcode__left .collection-date-btn
 {
     font-size: 14px;
 
@@ -881,33 +929,46 @@ main .item-view__head .more-info
 
     cursor: pointer;
 
-    color: #999;
+    color: #999; 
     border: solid 1px #c3c5c7;
     border-radius: 8px;
 
     align-items: center;
 }
 .choose-date .choose-date__left .collect-today-btn input,
-.choose-date .choose-date__left .collection-date-btn input
+.drop-postcode .choose-date__left .collect-today-btn input,
+.drop-postcode .drop-postcode__left .collect-today-btn input,
+.choose-date .choose-date__left .collection-date-btn input,
+.drop-postcode .choose-date__left .collection-date-btn input,
+.drop-postcode .drop-postcode__left .collection-date-btn input
 {
     margin-right: 10px;
 }
-.choose-date .choose-date__left .collect-today-btn_active
+.choose-date .choose-date__left .collect-today-btn_active,
+.drop-postcode .choose-date__left .collect-today-btn_active,
+.drop-postcode .drop-postcode__left .collect-today-btn_active
 {
     border: solid 1.5px #446dc1;
 }
-.choose-date .choose-date__left .collection-date-btn
+.choose-date .choose-date__left .collection-date-btn,
+.drop-postcode .choose-date__left .collection-date-btn,
+.drop-postcode .drop-postcode__left .collection-date-btn
 {
     margin-left: 15px;
 }
-.choose-date .choose-date__left .collection-date-btn img
+.choose-date .choose-date__left .collection-date-btn img,
+.drop-postcode .choose-date__left .collection-date-btn img,
+.drop-postcode .drop-postcode__left .collection-date-btn img
 {
     width: 24px;
     margin-right: 10px;
 }
-.choose-date .choose-date__left .choose-collection
+.choose-date .choose-date__left .choose-collection,
+.drop-postcode .choose-date__left .choose-collection,
+.drop-postcode .drop-postcode__left .choose-collection
 {
     position: absolute;
+    z-index: 999 !important;
     z-index: 1;
     left: 0;
 
@@ -917,19 +978,37 @@ main .item-view__head .more-info
     margin-left: 100px;
     padding: 17px;
 
-    border-radius: 4px;
+    border-radius: 4px; 
     background-color: #fff;
     box-shadow: 1px 1px 5px 3px #d9d6d685;
 }
-.choose-date .choose-date__left .choose-collection .collection-date__block
+.choose-date .choose-date__left .choose-collection .collection-date__block,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block,
+.choose-date .choose-date__left .choose-collection .collection-date__block--disabled,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled,
+.choose-date .choose-date__left .choose-collection .collection-time__block,
+.drop-postcode .choose-date__left .choose-collection .collection-time__block,
+.drop-postcode .drop-postcode__left .choose-collection .collection-time__block
 {
     margin-right: 15px;
-    padding: 8px 15px 0 15px;
+    padding: 8px 20px 0 20px;
+
+    cursor: pointer; 
 
     border: solid 1px #c3c5c7;
     border-radius: 3px;
 }
-.choose-date .choose-date__left .choose-collection .collection-date__block .date-week
+.choose-date .choose-date__left .choose-collection .collection-date__block .date-week,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block .date-week,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block .date-week,
+.choose-date .choose-date__left .choose-collection .collection-date__block--disabled .date-week,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled .date-week,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled .date-week,
+.choose-date .choose-date__left .choose-collection .collection-time__block .date-week,
+.drop-postcode .choose-date__left .choose-collection .collection-time__block .date-week,
+.drop-postcode .drop-postcode__left .choose-collection .collection-time__block .date-week
 {
     font-size: 12px;
 
@@ -939,9 +1018,17 @@ main .item-view__head .more-info
 
     color: #999;
 }
-.choose-date .choose-date__left .choose-collection .collection-date__block .date-day
+.choose-date .choose-date__left .choose-collection .collection-date__block .date-day,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block .date-day,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block .date-day,
+.choose-date .choose-date__left .choose-collection .collection-date__block--disabled .date-day,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled .date-day,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled .date-day,
+.choose-date .choose-date__left .choose-collection .collection-time__block .date-day,
+.drop-postcode .choose-date__left .choose-collection .collection-time__block .date-day,
+.drop-postcode .drop-postcode__left .choose-collection .collection-time__block .date-day
 {
-    font-size: 40px;
+    font-size: 40px; 
 
     display: block;
 
@@ -949,38 +1036,194 @@ main .item-view__head .more-info
 
     color: #5d6162;
 }
-.choose-date .choose-date__left .choose-collection .collection-date__block .date-time
+.choose-date .choose-date__left .choose-collection .collection-date__block .date-time,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block .date-time,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block .date-time,
+.choose-date .choose-date__left .choose-collection .collection-date__block--disabled .date-time,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled .date-time,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled .date-time,
+.choose-date .choose-date__left .choose-collection .collection-time__block .date-time,
+.drop-postcode .choose-date__left .choose-collection .collection-time__block .date-time,
+.drop-postcode .drop-postcode__left .choose-collection .collection-time__block .date-time
 {
     font-size: 16px;
 
-    padding-bottom: 5px;
+    padding-bottom: 5px; 
 
     text-align: center;
 
     color: #5d6162;
 }
-.choose-date .choose-date__left .choose-collection .collection-time__block
+.choose-date .choose-date__left .choose-collection .collection-date__block:nth-child(4),
+.drop-postcode .choose-date__left .choose-collection .collection-date__block:nth-child(4),
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block:nth-child(4),
+.choose-date .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(4),
+.drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(4),
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled:nth-child(4),
+.choose-date .choose-date__left .choose-collection .collection-time__block:nth-child(4),
+.drop-postcode .choose-date__left .choose-collection .collection-time__block:nth-child(4),
+.drop-postcode .drop-postcode__left .choose-collection .collection-time__block:nth-child(4)
+{
+    color: #ccc;
+    border: solid 1px #c3c5c7;
+}
+.choose-date .choose-date__left .choose-collection .collection-date__block:nth-child(4) .date-day,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block:nth-child(4) .date-day,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block:nth-child(4) .date-day,
+.choose-date .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(4) .date-day,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(4) .date-day,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled:nth-child(4) .date-day,
+.choose-date .choose-date__left .choose-collection .collection-time__block:nth-child(4) .date-day,
+.drop-postcode .choose-date__left .choose-collection .collection-time__block:nth-child(4) .date-day,
+.drop-postcode .drop-postcode__left .choose-collection .collection-time__block:nth-child(4) .date-day
+{
+    color: #ccc;
+}
+.choose-date .choose-date__left .choose-collection .collection-date__block:nth-child(5),
+.drop-postcode .choose-date__left .choose-collection .collection-date__block:nth-child(5),
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block:nth-child(5),
+.choose-date .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(5),
+.drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(5),
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled:nth-child(5),
+.choose-date .choose-date__left .choose-collection .collection-time__block:nth-child(5),
+.drop-postcode .choose-date__left .choose-collection .collection-time__block:nth-child(5),
+.drop-postcode .drop-postcode__left .choose-collection .collection-time__block:nth-child(5)
+{
+    color: #ccc;
+    border: solid 1px #c3c5c7;
+}
+.choose-date .choose-date__left .choose-collection .collection-date__block:nth-child(5) .date-day,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block:nth-child(5) .date-day,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block:nth-child(5) .date-day,
+.choose-date .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(5) .date-day,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled:nth-child(5) .date-day,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled:nth-child(5) .date-day,
+.choose-date .choose-date__left .choose-collection .collection-time__block:nth-child(5) .date-day,
+.drop-postcode .choose-date__left .choose-collection .collection-time__block:nth-child(5) .date-day,
+.drop-postcode .drop-postcode__left .choose-collection .collection-time__block:nth-child(5) .date-day
+{
+    color: #ccc;
+}
+.choose-date .choose-date__left .choose-collection .collection-date__block_active,
+.drop-postcode .choose-date__left .choose-collection .collection-date__block_active,
+.drop-postcode .drop-postcode__left .choose-collection .collection-date__block_active,
+.choose-date .choose-date__left .choose-collection .collection-time__block_active,
+.drop-postcode .choose-date__left .choose-collection .collection-time__block_active,
+.drop-postcode .drop-postcode__left .choose-collection .collection-time__block_active
+{
+    border: solid 1px #446dc1;
+}
+.choose-date .choose-date__left .choose-collection .collection-time__block,
+.drop-postcode .choose-date__left .choose-collection .collection-time__block,
+.drop-postcode .drop-postcode__left .choose-collection .collection-time__block
 {
     margin-top: 10px;
     padding-bottom: 7px;
+
+    cursor: pointer;
 }
-.choose-date .choose-date__left .choose-collection .collection-wrap
+.choose-date .choose-date__left .choose-collection .collection-wrap,
+.drop-postcode .choose-date__left .choose-collection .collection-wrap,
+.drop-postcode .drop-postcode__left .choose-collection .collection-wrap
 {
     display: flex;
 
     margin-bottom: 20px;
 }
-.choose-date .choose-date__left .choose-collection h5
+.choose-date .choose-date__left .choose-collection h5,
+.drop-postcode .choose-date__left .choose-collection h5,
+.drop-postcode .drop-postcode__left .choose-collection h5
 {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 600; 
 
     color: #666;
+}
+.choose-date .choose-date__left .choose-collection::-webkit-scrollbar,
+.drop-postcode .choose-date__left .choose-collection::-webkit-scrollbar,
+.drop-postcode .drop-postcode__left .choose-collection::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+
+    border-radius: 4px;
+    background-color: #666;
+}
+
+.drop-postcode
+{
+    padding: 12px 0 14px 0;
+}
+.drop-postcode .drop-postcode__left .view-drop-btn
+{
+    font-size: 16px;
+
+    padding: 5px 14px; 
+
+    color: #999;
+    border: solid 1px #c3c5c7;
+    border-radius: 3px;
+    background-color: transparent;
+}
+.drop-postcode .drop-postcode__left .view-drop-btn img
+{
+    margin: 0 7px 0 0;
+}
+.drop-postcode .drop-postcode__left .view-drop-btn:hover
+{
+    color: #446dc1;
+    border: solid 1px #446dc1;
+}
+.drop-postcode .drop-postcode__left span
+{
+    font-size: 14px;
+    line-height: 46px;
+
+    margin-right: 15px; 
+
+    color: #999;
+}
+.drop-postcode .drop-postcode__left form
+{
+    position: relative; 
+
+    overflow: hidden;
+
+    margin-right: 15px;
+}
+.drop-postcode .drop-postcode__left form input[type='text']
+{
+    width: 250px; 
+    padding: 10px;
+
+    border: solid 1px #666;
+}
+.drop-postcode .drop-postcode__left form input[type='submit']
+{
+    font-size: 13px;
+    font-weight: 300;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 13px 15px; 
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border: solid 1px #446dc1;
+    border-radius: 3px;
+    background-color: #446dc1;
+}
+.drop-postcode .drop-postcode__left form input[type='submit']:hover
+{
+    background-color: #3059ad;
 }
 
 header
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
 
     padding: 20px;
 
@@ -995,7 +1238,7 @@ header .logo-img
 {
     font-family: 'Roboto', sans-serif;
 
-    padding: 8px;
+    padding: 8px; 
 
     background-color: #f2f2f2;
 }
@@ -1024,4 +1267,535 @@ header .logo-img
 .top-bar .top-bar__block:nth-child(3) .top-bar__icon
 {
     max-width: 65px;
+}
+
+@media screen and (min-width: 1200px)
+{
+    .container
+    {
+        max-width: 1200px;
+    }
+    main .service-list-wrap .service-list-col .view__bottom-right img
+    {
+        margin: 7px 15px 0 28px;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .container
+    {
+        max-width: 1020px !important;
+    }
+    main .service-list-wrap .service-list-col .view__bottom-right img
+    {
+        margin: 7px 2px 0 2px !important;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .map-carriers .map-carriers__block
+    {
+        padding: 0 !important; 
+
+        border: none !important;
+    }
+    .map-carriers .map-carriers__block img
+    {
+        display: none !important;
+    }
+    .map-carriers .map-carriers__block span
+    {
+        display: block !important;
+
+        margin: 10px 10px 0 0 !important;
+        padding: 5px 10px;
+
+        color: #fff; 
+        border: solid 2px #446dc1;
+        border-radius: 5px;
+        background-color: #446dc1;
+    }
+    .map-carriers .map-carriers__block span:hover
+    {
+        color: #446dc1;
+        background-color: transparent;
+    }
+    .map-carriers
+    {
+        margin-bottom: 15px;
+    }
+    .choose-collection
+    {
+        margin-left: 0 !important;
+    }
+    .service-conditions-col
+    {
+        margin-left: 45px !important;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .top-bar__block
+    {
+        line-height: 20px;
+    }
+    .top-bar__block .top-bar__block--name
+    {
+        font-size: 15px;
+    }
+    .top-bar__block .top-bar__block--desc
+    {
+        font-size: 13px;
+    }
+    .top-bar__block .top-bar__icon
+    {
+        margin: 6px 5px 0 0 !important;
+    }
+    .filter--found-sizes
+    {
+        max-width: 350px !important;
+        margin-left: 12px !important; 
+        padding: 10px 0;
+    }
+    .filters__first-row
+    {
+        margin: 0 0 10px 0 !important;
+    }
+    #no-printer
+    {
+        margin-top: 20px !important;
+    }
+    main .service-list-wrap
+    {
+        flex-direction: column;
+
+        justify-content: center !important;
+    }
+    main .service-list-wrap .service-list-col
+    {
+        display: block;
+
+        width: 50% !important;
+        margin: 0 auto;
+    }
+    main .service-list-wrap .service-list-col .view__bottom-right img
+    {
+        margin: 7px 12px 0 12px !important;
+    }
+    #map
+    {
+        height: 260px !important;
+    }
+    .modal-content
+    {
+        width: 75% !important;
+    }
+    .collection-wrap
+    {
+        flex-direction: column;
+    }
+    .date-time
+    {
+        font-size: 14px;
+    }
+    .collection-date__block,
+    .choose-date .choose-date__left .choose-collection .collection-date__block--disabled,
+    .drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled,
+    .drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled,
+    .choose-date .choose-date__left .choose-collection .collection-time__block,
+    .drop-postcode .choose-date__left .choose-collection .collection-time__block,
+    .drop-postcode .drop-postcode__left .choose-collection .collection-time__block
+    {
+        width: 160px; 
+        margin: 10px 0;
+        padding: 10px 20px 10px 20px !important;
+    }
+    .collection-date__block .date-day,
+    .choose-date .choose-date__left .choose-collection .collection-date__block--disabled .date-day,
+    .drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled .date-day,
+    .drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled .date-day,
+    .choose-date .choose-date__left .choose-collection .collection-time__block .date-day,
+    .drop-postcode .choose-date__left .choose-collection .collection-time__block .date-day,
+    .drop-postcode .drop-postcode__left .choose-collection .collection-time__block .date-day
+    {
+        font-size: 15px !important;
+
+        display: inline-block !important;
+        float: right;
+
+        margin-top: 3px !important;
+    }
+    .collection-date__block .date-week,
+    .choose-date .choose-date__left .choose-collection .collection-date__block--disabled .date-week,
+    .drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled .date-week,
+    .drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled .date-week,
+    .choose-date .choose-date__left .choose-collection .collection-time__block .date-week,
+    .drop-postcode .choose-date__left .choose-collection .collection-time__block .date-week,
+    .drop-postcode .drop-postcode__left .choose-collection .collection-time__block .date-week
+    {
+        font-size: 15px;
+
+        display: inline-block !important;
+    }
+    .collection-time__block
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    header
+    {
+        padding: 10px 0;
+    }
+    header .logo-img
+    {
+        max-width: 160px;
+    }
+    #filters
+    {
+        padding-top: 10px !important;
+    }
+    #filters .filters--found-services
+    {
+        height: auto !important;
+    }
+    #filters .filter--found-sizes
+    {
+        max-width: 330px;
+        margin: 8px 0 0 17px; 
+        padding: 10px;
+    }
+    #filters .filter--found-sizes .found-sizes__dimens
+    {
+        max-width: 80%; 
+        margin-left: 35px;
+    }
+    #filters .filter--found-sizes .found-sizes__edit
+    {
+        padding-left: 15px !important;
+    }
+    #filters .filters__first-row
+    {
+        margin: 0 18px 10px 0;
+    }
+    #filters .filters__second-row .filter-buttons
+    {
+        display: none;
+
+        max-width: 93%;
+        margin: 0 10px 20px 10px;
+        margin-top: 40px; 
+        padding: 20px 10px 10px 20px;
+
+        border-radius: 4px;
+        background-color: #f2f2f2;
+    }
+    #filters .filters__second-row .filter-buttons .filter-btn,
+    #filters .filters__second-row .filter-buttons .filter-btn_active
+    {
+        line-height: 13px; 
+
+        display: inline-block;
+
+        width: 43.5%;
+        margin-bottom: 15px !important;
+        padding: 9px 8px 2px 10px;
+
+        color: #fff !important;
+        background-color: #446dc1;
+    }
+    #filters .filters__second-row .filter-buttons .filter-btn span,
+    #filters .filters__second-row .filter-buttons .filter-btn_active span
+    {
+        color: #fff;
+    }
+    #filters .filters__second-row .filter-buttons .filter-btn span:nth-child(1),
+    #filters .filters__second-row .filter-buttons .filter-btn_active span:nth-child(1)
+    {
+        font-size: 17px;
+    }
+    #filters .filters__second-row .filter-buttons .filter-btn span:nth-child(2),
+    #filters .filters__second-row .filter-buttons .filter-btn_active span:nth-child(2)
+    {
+        line-height: 30px; 
+
+        float: right;
+    }
+    #filters .filters__second-row .filter-buttons .filter-btn:hover,
+    #filters .filters__second-row .filter-buttons .filter-btn_active:hover
+    {
+        background-color: #446dc1;
+    }
+    .drop-postcode .drop-postcode__left span
+    {
+        display: none;
+    }
+    .details-list,
+    .options-list
+    {
+        padding: 20px 20px 18px 20px !important;
+    }
+    .details-list .info-input,
+    .options-list .info-input
+    {
+        font-size: 13px; 
+
+        width: 30% !important;
+    }
+    .details-list .info-input .info-input__more,
+    .options-list .info-input .info-input__more
+    {
+        margin-left: 0 !important;
+    }
+    main .service-list-wrap .service-list-col
+    {
+        width: 80% !important;
+    }
+    .shipment-btn,
+    .filters__second-row .filter-mobile-btn
+    {
+        width: 45.9999%;
+        margin: 0 0 0 5px;
+    }
+    .filter-mobile-btn
+    {
+        display: block !important;
+
+        margin: 0;
+    }
+    .modal-content
+    {
+        width: 80% !important;
+    }
+    .found-locations-h5
+    {
+        display: none !important;
+    }
+    .modal-wrapper #map
+    {
+        height: 230px !important;
+    }
+    #no-printer
+    {
+        margin-top: 0 !important;
+    }
+    .select-carrier-btn
+    {
+        display: block !important;
+    }
+    .modal .modal-content
+    {
+        width: 90% !important;
+        padding: 20px 20px 17px 24px !important;
+    }
+    .modal .modal-content h5
+    {
+        display: none;
+    }
+    .modal .modal-content .map-carriers
+    {
+        flex-direction: column !important;
+
+        margin: 0 !important;
+    }
+    .modal .modal-content .map-carriers .map-carriers__block
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 568px)
+{
+    .top-bar__block
+    {
+        line-height: 14px;
+
+        padding: 0 10px !important;
+    }
+    .top-bar__block .top-bar__block--name
+    {
+        font-size: 13px;
+    }
+    .top-bar__block .top-bar__block--desc
+    {
+        font-size: 11px;
+    }
+    .top-bar__block .top-bar__icon
+    {
+        margin: 2px 5px 0 0 !important;
+    }
+    #filters
+    {
+        padding-top: 10px !important;
+    }
+    #filters .filters--found-services p
+    {
+        font-size: 22px;
+    }
+    .filters__second-row .row .row
+    {
+        justify-content: center !important;
+    }
+    .filters__second-row .row .row .shipment-btn,
+    .filters__second-row .row .row .filter-mobile-btn
+    {
+        font-size: 12px !important; 
+
+        width: 40.999%;
+        padding: 5px 5px;
+    }
+    .upgrade-item .upgrade-item__icon
+    {
+        display: none !important;
+    }
+    .upgrade-item .form-control
+    {
+        display: none !important;
+    }
+    .upgrade-item .upgrade-item-btn
+    {
+        display: none !important;
+    }
+    .modal-wrapper #map
+    {
+        height: 220px !important;
+        margin-top: 15px !important;
+    }
+    .modal-wrapper .modal .modal-content
+    {
+        width: 90% !important;
+    }
+    .close-btn,
+    .close-choose-btn
+    {
+        top: 16px;
+        right: 16px;
+    }
+    .service-wrap
+    {
+        flex-direction: column !important;
+    }
+    .service-wrap .service-conditions-col
+    {
+        margin: 30px 0 10px 0 !important;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .top-bar__block
+    {
+        line-height: 12px;
+
+        margin-bottom: 5px; 
+        padding: 0 7px !important;
+    }
+    .top-bar__block .top-bar__block--name
+    {
+        font-size: 13px;
+
+        margin: 5px 0 0 6px;
+    }
+    .top-bar__block .top-bar__block--desc
+    {
+        display: none !important;
+    }
+    main .service-list-wrap .service-list-col
+    {
+        width: 95% !important;
+    }
+    main .service-list-wrap .service-list-col .view__bottom-right
+    {
+        margin-top: 8px;
+    }
+    main .service-list-wrap .service-list-col .view__bottom-right img
+    {
+        margin: 7px 12px 0 7px !important;
+    }
+    main .item-view__head .company-icon
+    {
+        max-width: 90px !important;
+    }
+    main .item-view__center
+    {
+        margin: 15px 0 !important;
+    }
+    .modal .book-now-btn
+    {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .top-bar__block
+    {
+        line-height: 12px;
+
+        margin-bottom: 5px; 
+        padding: 0 3px !important;
+    }
+    .top-bar__block .top-bar__block--name
+    {
+        font-size: 11px;
+    }
+    #filters .filter--found-sizes
+    {
+        max-width: 290px !important;
+    }
+    #filters .filter--found-sizes .col-10
+    {
+        padding: 0 7px !important;
+    }
+    #filters .found-sizes__dimens
+    {
+        font-size: 14px !important; 
+
+        margin-top: 4px;
+    }
+    #filters .found-sizes__edit
+    {
+        padding-left: 0 !important;
+    }
+    main .service-list-wrap .service-list-col
+    {
+        width: 95% !important;
+    }
+    main .service-list-wrap .service-list-col .view__bottom-right
+    {
+        margin-top: 8px;
+    }
+    main .service-list-wrap .service-list-col .view__bottom-right img
+    {
+        margin: 7px 5px 0 3px !important;
+    }
+    .found-sizes__edit
+    {
+        margin-left: 10px !important;
+    }
+    .found-sizes__dimens:after
+    {
+        top: 12px !important; 
+        left: 0 !important;
+    }
+    .drop-postcode form input[type='submit']
+    {
+        font-size: 12px !important; 
+
+        padding: 13px 5px !important;
+    }
+    .drop-postcode .view-drop-btn img
+    {
+        display: none !important;
+    }
+    .shipment-btn,
+    .filters__second-row .filter-mobile-btn
+    {
+        font-size: 11px !important;
+    }
 }
