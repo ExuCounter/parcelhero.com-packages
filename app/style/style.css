@@ -173,6 +173,11 @@ a:active {
         display: none; }
     .modal-wrapper .modal_map .modal-content-map .map-carriers .map-carriers__block_active {
       border: solid 1px #446dc1; }
+  .modal-wrapper .modal_map .modal-content-map .select-carrier-btn {
+    background-color: transparent;
+    color: #446dc1;
+    border: solid 2px #446dc1;
+    display: none; }
 
 main {
   background-color: #ebeef5;
@@ -694,7 +699,9 @@ header {
   .map-carriers {
     margin-bottom: 15px; }
   .choose-collection {
-    margin-left: 0px !important; } }
+    margin-left: 0px !important; }
+  .service-conditions-col {
+    margin-left: 45px !important; } }
 
 @media screen and (max-width: 992px) {
   .top-bar__block {
@@ -724,12 +731,10 @@ header {
         margin: 7px 12px 0px 12px !important; }
   #map {
     height: 260px !important; }
-  .modal-content-map {
+  .modal-content {
     width: 75% !important; }
   .collection-wrap {
     flex-direction: column; }
-  .date-week {
-    font-size: 15px; }
   .date-time {
     font-size: 14px; }
   .collection-date__block, .choose-date .choose-date__left .choose-collection .collection-date__block--disabled, .drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled, .choose-date .choose-date__left .choose-collection .collection-time__block, .drop-postcode .choose-date__left .choose-collection .collection-time__block, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block {
@@ -737,7 +742,13 @@ header {
     margin: 10px 0px;
     width: 160px; }
     .collection-date__block .date-day, .choose-date .choose-date__left .choose-collection .collection-date__block--disabled .date-day, .drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled .date-day, .choose-date .choose-date__left .choose-collection .collection-time__block .date-day, .drop-postcode .choose-date__left .choose-collection .collection-time__block .date-day, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block .date-day {
-      display: none !important; }
+      display: inline-block !important;
+      font-size: 15px !important;
+      float: right;
+      margin-top: 3px !important; }
+    .collection-date__block .date-week, .choose-date .choose-date__left .choose-collection .collection-date__block--disabled .date-week, .drop-postcode .choose-date__left .choose-collection .collection-date__block--disabled .date-week, .drop-postcode .drop-postcode__left .choose-collection .collection-date__block--disabled .date-week, .choose-date .choose-date__left .choose-collection .collection-time__block .date-week, .drop-postcode .choose-date__left .choose-collection .collection-time__block .date-week, .drop-postcode .drop-postcode__left .choose-collection .collection-time__block .date-week {
+      font-size: 15px;
+      display: inline-block !important; }
   .collection-time__block {
     text-align: center; } }
 
@@ -803,7 +814,7 @@ header {
   .filter-mobile-btn {
     display: block !important;
     margin: 0px; }
-  .modal-content-map {
+  .modal-content {
     width: 80% !important; }
   .found-locations-h5 {
     display: none !important; }
@@ -811,13 +822,17 @@ header {
     height: 230px !important; }
   #no-printer {
     margin-top: 0px !important; }
-  .modal .modal-content-map {
+  .select-carrier-btn {
+    display: block !important; }
+  .modal .modal-content {
     width: 90% !important;
     padding: 20px 20px 17px 24px !important; }
-    .modal .modal-content-map h5 {
+    .modal .modal-content h5 {
       display: none; }
-    .modal .modal-content-map .map-carriers {
-      flex-direction: column !important; } }
+    .modal .modal-content .map-carriers {
+      flex-direction: column !important; }
+      .modal .modal-content .map-carriers .map-carriers__block {
+        display: none; } }
 
 @media screen and (max-width: 568px) {
   .top-bar__block {
@@ -837,7 +852,8 @@ header {
     justify-content: center !important; }
     .filters__second-row .row .row .shipment-btn, .filters__second-row .row .row .filter-mobile-btn {
       width: 40.999%;
-      padding: 5px 5px; }
+      padding: 5px 5px;
+      font-size: 12px !important; }
   .upgrade-item .upgrade-item__icon {
     display: none !important; }
   .upgrade-item .form-control {
@@ -846,11 +862,16 @@ header {
     display: none !important; }
   .modal-wrapper #map {
     height: 220px !important;
-    width: 96% !important;
     margin-top: 15px !important; }
+  .modal-wrapper .modal .modal-content {
+    width: 90% !important; }
   .close-btn, .close-choose-btn {
     top: 8px;
-    right: 8px; } }
+    right: 8px; }
+  .service-wrap {
+    flex-direction: column !important; }
+    .service-wrap .service-conditions-col {
+      margin: 30px 0px 10px 0px !important; } }
 
 @media screen and (max-width: 480px) {
   .top-bar__block {
@@ -872,8 +893,8 @@ header {
     max-width: 90px !important; }
   main .item-view__center {
     margin: 15px 0px !important; }
-  main .more-info {
-    display: none !important; } }
+  .modal .book-now-btn {
+    width: 90% !important; } }
 
 @media screen and (max-width: 400px) {
   .top-bar__block {
@@ -906,4 +927,6 @@ header {
     padding: 13px 5px !important;
     font-size: 12px !important; }
   .drop-postcode .view-drop-btn img {
-    display: none !important; } }
+    display: none !important; }
+  .shipment-btn, .filters__second-row .filter-mobile-btn {
+    font-size: 11px !important; } }

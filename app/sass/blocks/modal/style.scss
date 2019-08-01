@@ -143,6 +143,15 @@
 		    }
  
 		  }
+		  .select-carrier-btn{
+        background-color: transparent;
+        color: $main-color;
+
+        border: solid 2px $main-color;
+
+        display: none;
+
+		  }
 
 	  }
 

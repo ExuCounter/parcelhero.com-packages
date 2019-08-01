@@ -89,6 +89,10 @@
     margin-left: 0px !important;
 
   }
+  .service-conditions-col{
+    margin-left: 45px !important;
+
+  }
   
 
 }
@@ -151,16 +155,12 @@
     height: 260px !important;
 
   }
-  .modal-content-map{
+  .modal-content{
     width: 75% !important;
 
   }
   .collection-wrap{
     flex-direction: column;
-
-  }
-  .date-week{
-    font-size: 15px;
 
   }
   .date-time{
@@ -172,7 +172,16 @@
     margin: 10px 0px;
     width: 160px;
     .date-day{
-      display: none !important;
+      display: inline-block !important;
+      font-size: 15px !important;
+      float: right;
+
+      margin-top: 3px !important;
+
+    }
+    .date-week{
+      font-size: 15px;
+      display:  inline-block !important;
 
     }
 
@@ -313,7 +322,7 @@
     margin: 0px;
 
   }
-  .modal-content-map{
+  .modal-content{
     width: 80% !important;
 
   }
@@ -321,16 +330,23 @@
     display: none !important;
 
   }
-  .modal-wrapper #map {
-    height: 230px !important;
+  .modal-wrapper{
+     #map{
+      height: 230px !important;
+
+     }
 
   }
   #no-printer {
     margin-top: 0px !important;
 
   }
+  .select-carrier-btn{
+    display: block !important;
+
+  }
   .modal{
-    .modal-content-map{
+    .modal-content{
     width: 90% !important;
     padding: 20px 20px 17px 24px !important;
       h5{
@@ -339,6 +355,10 @@
       } 
       .map-carriers{
         flex-direction: column !important;
+        .map-carriers__block{
+          display: none;
+
+        }
 
       }
 
@@ -385,6 +405,8 @@
           width: 40.999%;
           padding: 5px 5px;
 
+          font-size: 12px !important;
+
         }
 
       }
@@ -407,16 +429,33 @@
     }
 
   }
-  .modal-wrapper #map {
-    height: 220px !important;
-    width: 96% !important;
+  .modal-wrapper{
+    #map{
+      height: 220px !important;
 
-    margin-top: 15px !important;
+      margin-top: 15px !important;
 
+    }
+    .modal{
+      .modal-content{
+        width: 90% !important;
+
+      }
+
+    }
+   
   }
   .close-btn{
     top: 8px;
     right: 8px;
+
+  }
+  .service-wrap{
+    flex-direction: column !important;
+    .service-conditions-col{
+      margin: 30px 0px 10px 0px !important;
+
+    }
 
   }
 
@@ -467,8 +506,11 @@
       margin: 15px 0px !important;
 
     }
-    .more-info{
-      display: none !important;
+
+  }
+  .modal{
+    .book-now-btn{
+      width: 90% !important;
 
     }
 
@@ -553,6 +595,10 @@
       }
 
     }
+
+  }
+  .shipment-btn{
+    font-size: 11px !important;
 
   }
 
