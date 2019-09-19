@@ -673,14 +673,10 @@ header {
       max-width: 65px; }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px; }
   main .service-list-wrap .service-list-col .view__bottom-right img {
     margin: 7px 15px 0px 28px; } }
 
 @media screen and (min-width: 992px) {
-  .container {
-    max-width: 1020px !important; }
   main .service-list-wrap .service-list-col .view__bottom-right img {
     margin: 7px 2px 0px 2px !important; } }
 
